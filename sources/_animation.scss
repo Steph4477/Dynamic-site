@@ -17,7 +17,7 @@ $color-tertiary: #99E2D0;
     &__container{
         display: flex;
         margin:auto;
-        left:0;
+        left:-300px;
         right:0;
         top:0;
         bottom:0;
@@ -33,22 +33,23 @@ $color-tertiary: #99E2D0;
             border-radius: 50%;
             box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
             animation:  opacity 3s none;
-            margin-right: 80px;
+            margin-right: 100px;
+            scale: (2);
             
             &__fond{
-                margin: 25%;
-                min-width: 50%;
-                max-width: 50%;
-                min-height: 50%;
-                max-height: 50%;
+                margin: 15%;
+                min-width: 70%;
+                max-width: 70%;
+                min-height: 70%;
+                max-height: 70%;
                 border-radius: 50%;
                 box-shadow: inset 0 5px 3px rgba(0, 0, 0, 0.3), inset 0 -2px 1px rgba(255, 255, 255, 1);
-                scale: (1);
+               
                
                 &__logo{
                     position: absolute;
-                    top: 15px;
-                    left: 7px;
+                    top: 22px;
+                    left: 9px;
                     width: 80%;
                     height: auto; 
                 }
@@ -76,20 +77,14 @@ $color-tertiary: #99E2D0;
 {
     0% {
         opacity: 1;
-        scale: 1.2;   
+        scale: 2;   
     }
-    25% {
-        opacity: 1;
-        scale: 0;
-    }   
+    
     50% {
         opacity: 1;
-        scale: 1.5;
-    }
-    75% {
-        opacity: 1;
         scale: 0;
     }
+   
     90%{
         opacity: 1;
         scale: 2;
