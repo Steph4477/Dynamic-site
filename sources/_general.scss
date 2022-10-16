@@ -1,0 +1,35 @@
+@use "sass:color";
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+*
+{
+    font-family: "Roboto", "sans-serif";
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.header__logo {
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    text-align: center;
+    animation: cache 5s linear;
+}
+
+@keyframes cache
+{
+    0% {
+        opacity: 0;
+    }
+    
+    60% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}

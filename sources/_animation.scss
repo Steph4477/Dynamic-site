@@ -1,0 +1,102 @@
+@use "sass:color";
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+.chargement {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;   
+    animation: opacity 3s linear;
+    animation-fill-mode: forwards;
+
+    &__container{
+        display: flex;
+        margin:auto;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        position:fixed;
+        width: 100px;
+        height: 100px;
+
+        &__assiette{
+            min-width: 100px;
+            max-width: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            border-radius: 50%;
+            box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
+            animation:  opacity 3s none;
+            margin-right: 80px;
+            
+            &__fond{
+                margin: 25%;
+                min-width: 50%;
+                max-width: 50%;
+                min-height: 50%;
+                max-height: 50%;
+                border-radius: 50%;
+                box-shadow: inset 0 5px 3px rgba(0, 0, 0, 0.3), inset 0 -2px 1px rgba(255, 255, 255, 1);
+                scale: (1);
+               
+                &__logo{
+                    position: absolute;
+                    top: 15px;
+                    left: 7px;
+                    width: 80%;
+                    height: auto; 
+                }
+            }
+            
+            &--1{
+                background: $color-primary;
+                animation-delay: 50ms;
+            }
+            
+            &--2{
+                background: $color-tertiary;
+                animation-delay: 300ms;
+            }
+            
+            &--3{
+                background: $color-secondary;
+                animation-delay: 600ms;
+            }
+        }
+    }
+}
+
+@keyframes opacity
+{
+    0% {
+        opacity: 1;
+        scale: 1.2;   
+    }
+    25% {
+        opacity: 1;
+        scale: 0;
+    }   
+    50% {
+        opacity: 1;
+        scale: 1.5;
+    }
+    75% {
+        opacity: 1;
+        scale: 0;
+    }
+    90%{
+        opacity: 1;
+        scale: 2;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+    
+}
