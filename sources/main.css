@@ -4,7 +4,8 @@
   right: 0;
   top: 0;
   bottom: 0;
-  /*animation: opacity 3s linear;*/
+  -webkit-animation: opacity 3s linear;
+          animation: opacity 3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
