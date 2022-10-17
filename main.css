@@ -32,7 +32,7 @@
   -webkit-animation: opacity 3s none;
           animation: opacity 3s none;
   margin-right: 50px;
-  scale: (1.5);
+  scale: 1.5;
 }
 .chargement__container__assiette__fond {
   margin: 15%;
