@@ -1,37 +1,31 @@
 .chargement {
   position: fixed;
-  height: 100%;
-  width: 100%;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  -webkit-animation: opacity 3s linear;
-          animation: opacity 3s linear;
+  /*animation: opacity 3s linear;*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .chargement__container {
   display: flex;
   margin: auto;
-  left: -300px;
+  left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   position: fixed;
-  width: 100px;
+  width: 400px;
   height: 100px;
 }
 .chargement__container__assiette {
-  min-width: 100px;
-  max-width: 100px;
-  min-height: 100px;
-  max-height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
   -webkit-animation: opacity 3s none;
           animation: opacity 3s none;
-  margin-right: 50px;
   scale: 1.5;
 }
 .chargement__container__assiette__fond {
@@ -45,9 +39,9 @@
 }
 .chargement__container__assiette__fond__logo {
   position: absolute;
-  top: 22px;
-  left: 9px;
-  width: 80%;
+  top: 18px;
+  left: 10px;
+  width: 70%;
   height: auto;
 }
 .chargement__container__assiette--1 {
