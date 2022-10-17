@@ -5,7 +5,6 @@ $color-tertiary: #99E2D0;
 
 .chargement {
     position: fixed;
-   
     left:0;
     right:0;
     top:0;
@@ -21,18 +20,15 @@ $color-tertiary: #99E2D0;
         top:0;
         bottom:0;
         position:fixed;
-        width: 300px;
+        width: 250px;
         height: 100px;
 
         &__assiette{
-          
-            width: 60px;
-            
-            height: 60px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
             animation:  opacity 3s none;
-           
             scale: (1.5);
             
             &__fond{
@@ -44,11 +40,10 @@ $color-tertiary: #99E2D0;
                 border-radius: 50%;
                 box-shadow: inset 0 5px 3px rgba(0, 0, 0, 0.3), inset 0 -2px 1px rgba(255, 255, 255, 1);
                
-               
                 &__logo{
                     position: absolute;
-                    top: 14px;
-                    left: 5px;
+                    top: 11px;
+                    left: 4px;
                     width: 80%;
                     height: auto; 
                 }
