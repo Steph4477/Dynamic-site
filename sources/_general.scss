@@ -3,13 +3,17 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+body{
+    font-family: "roboto", sans-serif;
+}
+
 *
 {
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
     scroll-behavior: smooth;
-    max-width: 762px;
+    max-width: 1400px;
 }
 
 .nav{
@@ -38,7 +42,6 @@ $color-tertiary: #99E2D0;
         margin: 0;
         }
         &__texte{
-        font-family: "roboto";
         white-space: nowrap;
         font-weight: 700;
         width: 80%;
@@ -52,7 +55,6 @@ $color-tertiary: #99E2D0;
     text-align: center;
     &__titre{
         font-size: 30px;
-        font-family: "roboto";
         padding-top: 15px;
     }
 

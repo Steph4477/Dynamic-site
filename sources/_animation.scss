@@ -4,33 +4,31 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 .chargement {
-    position: fixed;
+    position: absolute;
     left:0;
     right:0;
     top:0;
     bottom:0;   
-    animation: opacity 3s linear;
+    animation: loader 3s linear;
     animation-fill-mode: forwards;
-
+    
     &__container{
         display: flex;
-        margin:auto;
+        margin: auto;
+        position: fixed;
         left:0;
         right:0;
-        top:0;
+        top: 200px;;
         bottom:0;
-        position:fixed;
-        width: 250px;
-        height: 100px;
-
+        
         &__assiette{
-            width: 50px;
-            height: 50px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
-            animation:  opacity 3s none;
-            scale: (1.5);
-            
+            scale: (1);
+            background-color: #bea4dd;
+           
             &__fond{
                 margin: 15%;
                 min-width: 70%;
@@ -39,53 +37,86 @@ $color-tertiary: #99E2D0;
                 max-height: 70%;
                 border-radius: 50%;
                 box-shadow: inset 0 5px 3px rgba(0, 0, 0, 0.3), inset 0 -2px 1px rgba(255, 255, 255, 1);
-               
-                &__logo{
+            
+                &__centre{
+                    background: #000;
+                    border-radius: 50%;
+                    content: "";
                     position: absolute;
-                    top: 11px;
-                    left: 4px;
-                    width: 80%;
-                    height: auto; 
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 5%;
+                    height: 5%;
+                    z-index: 10;
+                
+                    &__container-fourchette{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        animation: rotate 6s infinite linear;
+                        
+                       
+                        &__fourchette{
+                            position: absolute;
+                            scale: (0.20);
+                            top: -430px;
+                            left: -63px;
+                        }
+                    }
+                    
+                    &__container-couteau{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        animation: rotate 2s infinite linear;
+                        
+                        &__couteau{
+                            position: absolute;   
+                            scale: (0.20);
+                            rotate: 90deg;
+                            top: -370px;
+                            left: 25px;
+                        }
+                    }
                 }
-            }
-            
-            &--1{
-                background: $color-primary;
-                animation-delay: 50ms;
-            }
-            
-            &--2{
-                background: $color-tertiary;
-                animation-delay: 300ms;
-            }
-            
-            &--3{
-                background: $color-secondary;
-                animation-delay: 600ms;
-            }
-        }
+            }    
+        }          
     }
 }
 
-@keyframes opacity
-{
+@keyframes rotate{
+    100% {
+        transform: rotateZ(720deg);
+        visibility: hidden;
+    }
+}
+
+@keyframes loader{
     0% {
         opacity: 1;
-        scale: 1.5;   
+        scale: 1.5;
     }
     
     50% {
         opacity: 1;
-        scale: 0;
+        scale: 0.5;
     }
    
     90%{
         opacity: 1;
         scale: 1.5;
     }
-    100% {
-        opacity: 0;
-        display: none;
-    }
     
+    100% {
+       
+        opacity: 0;
+        scale: 1.8;
+        visibility: hidden;
+    }
 }
+
