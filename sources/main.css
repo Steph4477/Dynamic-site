@@ -1,3 +1,74 @@
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.logo__container {
+  display: flex;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -400px;
+  bottom: 0;
+  -webkit-animation: swing-top-fwd 3s linear;
+          animation: swing-top-fwd 3s linear;
+  -webkit-animation: reset_opacity 4s linear;
+          animation: reset_opacity 4s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.logo__container__O {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+.logo__container__H {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+.logo__container__M {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+.logo__container__Y {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms;
+}
+.logo__container__F {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 850ms;
+          animation-delay: 850ms;
+}
+.logo__container__o {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1050ms;
+          animation-delay: 1050ms;
+}
+.logo__container__0 {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1250ms;
+          animation-delay: 1250ms;
+}
+.logo__container__D {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1450ms;
+          animation-delay: 1450ms;
+}
+
 .chargement {
   position: absolute;
   left: 0;
@@ -23,7 +94,7 @@
   height: 300px;
   border-radius: 50%;
   box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
-  scale: 1;
+  scale: 0.5;
   background: #ab98c2;
 }
 .chargement__container__assiette__fond {
@@ -80,52 +151,72 @@
 @-webkit-keyframes rotate {
   100% {
     transform: rotateZ(720deg);
-    visibility: hidden;
   }
 }
 
 @keyframes rotate {
   100% {
     transform: rotateZ(720deg);
-    visibility: hidden;
   }
 }
 @-webkit-keyframes loader {
   0% {
-    scale: 1.5;
-  }
-  50% {
     scale: 0.5;
   }
   90% {
-    scale: 1.5;
+    scale: 1;
   }
   95% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    scale: 1.8;
-    visibility: hidden;
+    scale: 1;
   }
 }
 @keyframes loader {
   0% {
-    scale: 1.5;
-  }
-  50% {
     scale: 0.5;
   }
   90% {
-    scale: 1.5;
+    scale: 1;
   }
   95% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    scale: 1.8;
-    visibility: hidden;
+    scale: 1;
+  }
+}
+@-webkit-keyframes swing-top-fwd {
+  0% {
+    transform: rotateX(180deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotateX(0);
+    transform-origin: bottom;
+  }
+}
+@keyframes swing-top-fwd {
+  0% {
+    transform: rotateX(180deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotateX(0);
+    transform-origin: bottom;
+  }
+}
+@-webkit-keyframes reset_opacity {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes reset_opacity {
+  100% {
+    opacity: 0;
   }
 }
 body {

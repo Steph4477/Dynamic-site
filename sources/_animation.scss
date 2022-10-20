@@ -2,6 +2,60 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+.logo {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;   
+   
+    &__container{
+        display: flex;
+        margin: auto;
+        position: fixed;
+        left:0;
+        right:0;
+        top: -400px;
+        bottom:0;
+        animation: swing-top-fwd 3s linear;
+        animation: reset_opacity 4s linear;
+        animation-fill-mode: forwards;
+        &__O{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 50ms;
+        }
+        &__H{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 250ms;
+        }
+        &__M{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 450ms;
+        }
+        &__Y{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 650ms;
+        }
+        &__F{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 850ms;
+        }
+        &__o{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 1050ms;
+        }
+        &__0{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 1250ms;
+        }
+        &__D{
+            animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+            animation-delay: 1450ms;
+        }
+    }
+
+
+}
 
 .chargement {
     position: absolute;
@@ -18,7 +72,7 @@ $color-tertiary: #99E2D0;
         position: fixed;
         left:0;
         right:0;
-        top: 200px;;
+        top: 200px;
         bottom:0;
         
         &__assiette{
@@ -26,7 +80,7 @@ $color-tertiary: #99E2D0;
             height: 300px;
             border-radius: 50%;
             box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
-            scale: (1);
+            scale: (0.5);
             background: #ab98c2;
            
             &__fond{
@@ -89,21 +143,18 @@ $color-tertiary: #99E2D0;
 @keyframes rotate{
     100% {
         transform: rotateZ(720deg);
-        visibility: hidden;
+       
     }
 }
 
 @keyframes loader{
     0% {
-       scale: 1.5;
+       scale: 0.5;
     }
     
-    50% {
-        scale: 0.5;
-    }
    
     90%{
-        scale: 1.5;
+        scale: 1;
     }
     
     95% {
@@ -112,8 +163,29 @@ $color-tertiary: #99E2D0;
     
     100% {
         opacity: 0;
-        scale: 1.8;
-        visibility: hidden;
+        scale: 1;
+        
     }
 }
+@keyframes swing-top-fwd{
+    0% {
+        transform: rotateX(180deg);
+        transform-origin: bottom;
+        
+    }
+    
+    100% {
+        transform: rotateX(0);
+        transform-origin: bottom;
+        
+        
+    }
 
+}
+@keyframes reset_opacity{
+    100% {
+        opacity: 0;
+    }
+
+    
+}
