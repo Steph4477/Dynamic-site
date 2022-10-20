@@ -17,40 +17,40 @@ $color-tertiary: #99E2D0;
         right:0;
         top: -400px;
         bottom:0;
-        animation: swing-top-fwd 3s linear;
+        animation: swing-top-fwd 4s linear;
         animation: reset_opacity 4s linear;
         animation-fill-mode: forwards;
         &__O{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 50ms;
+            animation-delay: 100ms;
         }
         &__H{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 250ms;
+            animation-delay: 400ms;
         }
         &__M{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 450ms;
+            animation-delay: 700ms;
         }
         &__Y{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 650ms;
+            animation-delay: 1000ms;
         }
         &__F{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 850ms;
+            animation-delay: 1300ms;
         }
         &__o{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 1050ms;
+            animation-delay: 1600ms;
         }
         &__0{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 1250ms;
+            animation-delay: 1900ms;
         }
         &__D{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-            animation-delay: 1450ms;
+            animation-delay: 2200ms;
         }
     }
 
