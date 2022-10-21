@@ -1,10 +1,5 @@
 @charset "UTF-8";
 .logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   -webkit-animation: swing-top-fwd 4s linear;
           animation: swing-top-fwd 4s linear;
   -webkit-animation: reset_opacity 4s linear;
@@ -14,11 +9,10 @@
 }
 .logo__container {
   display: flex;
-  margin: auto;
   position: fixed;
   left: 0;
   right: 0;
-  top: -400px;
+  top: 40px;
   bottom: 0;
 }
 .logo__container__O {
