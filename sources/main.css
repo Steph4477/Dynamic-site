@@ -240,44 +240,62 @@ body {
   -webkit-animation: cache 5s linear;
           animation: cache 5s linear;
 }
+.nav__header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav__header__logo {
-  font-family: "Shrikhand", "cursive";
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
   text-align: center;
-  padding-top: 15px;
 }
 .nav__localisation {
   width: 100%;
-  height: 60px;
   box-shadow: 0px 4px 0px 0px #d3d2d2 inset;
   background: linear-gradient(#e2e2e2, #f3f3f3);
   display: flex;
-  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
 }
 .nav__localisation__container {
   display: flex;
-  width: 23%;
+  width: 240px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 .nav__localisation__container__icone {
-  width: 20%;
-  margin: 0;
+  font-size: 18px;
+  width: 50px;
+  text-align: right;
 }
 .nav__localisation__container__input {
   white-space: nowrap;
   font-weight: 700;
   width: 80%;
-  margin: 0;
+  padding-left: 15px;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  padding-top: 5px;
 }
 .nav__localisation__container__input:focus {
   outline: none; /* enlevement de la bordure entrée input */
 }
 .nav__localisation__container__input::-moz-placeholder { /* police zone de recherche en noire par défault */
   font-weight: bold;
+  color: black;
 }
 .nav__localisation__container__input:-ms-input-placeholder { /* police zone de recherche en noire par défault */
   font-weight: bold;
+  color: black;
 }
 .nav__localisation__container__input::placeholder { /* police zone de recherche en noire par défault */
   font-weight: bold;
+  color: black;
 }
 .nav__localisation__container__input::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: #666;
@@ -286,11 +304,44 @@ body {
 .nav__explo {
   flex-direction: column;
   width: 100%;
+  display: flex;
   text-align: center;
 }
 .nav__explo__titre {
   font-size: 30px;
-  padding-top: 15px;
+  font-weight: 900;
+  height: 120px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__explo__soustitre {
+  height: 100px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__explo__bouton {
+  height: 120px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav__explo__bouton__titre {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  padding: 18px;
+  border-radius: 10%/50%;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.nav__explo__bouton__titre:hover {
+  box-shadow: 0px 2px 2px 2px #4c4c4c;
 }
 
 @-webkit-keyframes cache {
