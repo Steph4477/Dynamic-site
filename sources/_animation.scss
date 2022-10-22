@@ -4,13 +4,11 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
 .logo {
-    
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s linear;
     animation-fill-mode: forwards;
     &__container{
         display: flex;
-      
         position: fixed;
         left:0;
         right:0;
@@ -53,14 +51,15 @@ $color-tertiary: #99E2D0;
 }
 
 .chargement {
-    position: absolute;
+    position: fixed;
     left:0;
     right:0;
-    top:0;
+    top: 50px;
     bottom:0;   
     animation: loader 3s linear;
     animation-fill-mode: forwards;
     z-index: -10;
+    height: 600px;
     &__container{
         display: flex;
         margin: auto;

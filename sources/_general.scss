@@ -17,7 +17,11 @@ body{
 }
 h2
 {
-    font-size: 30px;
+    font-size: 25px;
+}
+h3
+{
+    font-size: 20px
 }
 .nav{
     animation: cache 5s linear;
@@ -92,7 +96,7 @@ h2
         }
         &__soustitre{
             height: 100px;
-            font-size: 22px;
+            font-size: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -132,13 +136,13 @@ h2
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 40px;
-        width: 30%;
+        width: 20%;
         height: 400px;
         @media all and (max-width: 768px){
             width: 80%;
         }
         &__titre{
-            width: 350px;
+            width: 250px;
             text-align: left;
             font-weight: 900;
         }

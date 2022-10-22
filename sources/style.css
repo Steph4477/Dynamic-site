@@ -66,16 +66,17 @@
 }
 
 .chargement {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: 50px;
   bottom: 0;
   -webkit-animation: loader 3s linear;
           animation: loader 3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: -10;
+  height: 600px;
 }
 .chargement__container {
   display: flex;
@@ -233,7 +234,11 @@ body {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 .nav {
@@ -320,7 +325,7 @@ h2 {
 }
 .nav__explo__soustitre {
   height: 100px;
-  font-size: 22px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,7 +364,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
-  width: 30%;
+  width: 20%;
   height: 400px;
 }
 @media all and (max-width: 768px) {
@@ -368,7 +373,7 @@ h2 {
   }
 }
 .main__filtre__titre {
-  width: 350px;
+  width: 250px;
   text-align: left;
   font-weight: 900;
 }
