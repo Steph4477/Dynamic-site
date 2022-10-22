@@ -16,6 +16,7 @@ $color-tertiary: #99E2D0;
         right:0;
         top: 40px;
         bottom:0;
+        z-index: -10;
         &__O{
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 100ms;
@@ -59,6 +60,7 @@ $color-tertiary: #99E2D0;
     bottom:0;   
     animation: loader 3s linear;
     animation-fill-mode: forwards;
+    z-index: -10;
     &__container{
         display: flex;
         margin: auto;
