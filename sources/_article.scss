@@ -2,24 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 350px;
-    height: 800px;
+    width: 20%;
+    height: 1000px;
     &__titre{
-        
-        width: 100%;
+        width: 250px;
         text-align: left;
         font-weight: 900;
-       
     }
-  
-      
     &__article{
-        width: 100%;
+        width: 550px;
         height: 200px;
-            
-           
-
-           
         &__photo{
             object-fit: cover;
             width: 100%;
