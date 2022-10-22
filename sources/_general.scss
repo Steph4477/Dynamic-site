@@ -3,195 +3,39 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-body{
-    font-family: "roboto", sans-serif;
-}
 
-*
-{
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
     scroll-behavior: smooth;
     max-width: 1400px;
 }
-h2
-{
+
+h2{
     font-size: 25px;
 }
-h3
-{
+
+h3{
     font-size: 20px
 }
-.nav{
-    animation: cache 5s linear;
-    z-index: 10;
-    &__header{
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__logo {
-            font-family: "Shrikhand", sans-serif;
-            font-size: 30px;
-            text-align: center;
-        }
-    }
-    &__localisation{
-        width: 100%;
-        box-shadow: 0px 4px 0px 0px #d3d2d2 inset;
-        background:linear-gradient(#e2e2e2, #f3f3f3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 60px;
-        &__container{
-            display: flex;
-            width: 240px;
-            height: 40px;
-            align-items: center;
-            justify-content: center;
-            &__icone{
-                font-size: 18px;
-                width: 50px;
-                text-align: right;
-            }
-            &__input{
-                white-space: nowrap;
-                font-weight: 700;
-                width: 80%;
-                padding-left: 15px;
-                font-size: 18px;
-                border: none;
-                background: transparent;
-                padding-top: 5px;
-            }
-            &__input:focus{
-                outline: none;                 /* enlevement de la bordure entrée input */
-            }
-            &__input::placeholder{               /* police zone de recherche en noire par défault */
-                font-weight: bold;
-                color: black;
-            }
-            &__input::-moz-placeholder{                  /* Mozilla Firefox 19+ */
-                color:    #666;
-                opacity:  1;
-            }
-        }
-    }
-    &__explo{
-        flex-direction: column;
-        width: 100%;
-        display: flex;
-        text-align: center;
-        background:linear-gradient(#ffffff, #f2f1f1);
-        padding-bottom: 30px;
-        &__titre{
-            font-weight: 900;
-            height: 120px;
-            padding-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &__soustitre{
-            height: 100px;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &__bouton{
-            height: 120px;
-            width: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            
-            &__titre{
-                font-size: 18px;
-                font-weight: 500;
-                width: 100%;
-                padding: 18px;
-                border-radius: 10%/50%;
-                color: white;
-                background: linear-gradient($color-secondary, $color-primary);
-                box-shadow: 0px 4px 4px 2px  #cfcece;
-            }
-            &__titre:hover{
-                box-shadow: 0px 2px 2px 2px  #4c4c4c;
-            }
-        }
-    }
+
+body{
+    font-family: "roboto", sans-serif;
 }
+
 .main{
     animation: cache 5s linear;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    
-    &__filtre{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 40px;
-        width: 20%;
-        height: 400px;
-        @media all and (max-width: 768px){
-            width: 80%;
-        }
-        &__titre{
-            width: 250px;
-            text-align: left;
-            font-weight: 900;
-        }
 
-        &__bouton{
-            display: flex;
-            max-width: 350px;
-            min-width: 350px;
-            height: 80px;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5%/40%;
-            position: relative;
-            box-shadow: 0px 4px 4px 2px  #dcdbdb;
-            &__N{
-                max-height: 30px;
-                min-height: 30px;
-                max-width: 30px;
-                min-width: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                background: $color-primary;
-                color: white;
-                position: relative;
-                top: 0;
-                left: -15px;
-            }
-            &__icone{
-                font-size: 25px;
-                width: 20%;
-                padding-left: 10px;
-                color: #a2a1a1;
-            }
-            &__titre{
-                white-space: nowrap;
-                width: 80%;
-            }
-        }
-        &__bouton:hover{
-            background-color: #f7f0ff;
-            cursor: pointer;
-        }
-        &__bouton:hover &__bouton__icone{
-           color: $color-primary;
-        }
-    }
-}  
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
 
 @keyframes cache{
     0% {
