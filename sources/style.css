@@ -230,11 +230,11 @@
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
@@ -401,14 +401,14 @@ a {
   }
 }
 .main__filtre__titre {
-  width: 250px;
+  width: 200px;
   text-align: left;
   font-weight: 900;
 }
 .main__filtre__bouton {
   display: flex;
-  max-width: 350px;
-  min-width: 350px;
+  max-width: 300px;
+  min-width: 300px;
   height: 80px;
   justify-content: center;
   align-items: center;
