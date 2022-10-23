@@ -280,6 +280,7 @@ a {
   -webkit-animation: cache 5s linear;
           animation: cache 5s linear;
   z-index: 10;
+  min-width: 350px;
 }
 .nav__header {
   height: 60px;
@@ -392,6 +393,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
+  padding: 0;
   width: 28%;
   height: 400px;
 }
@@ -415,6 +417,7 @@ a {
   border-radius: 5%/40%;
   position: relative;
   box-shadow: 0px 4px 4px 2px #dcdbdb;
+  margin-left: 15px;
 }
 .main__filtre__bouton__N {
   max-height: 30px;
@@ -453,8 +456,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 28%;
+  width: 30%;
   height: 1000px;
+  padding-left: 10px;
+}
+@media all and (max-width: 768px) {
+  .main__resto {
+    width: 90%;
+  }
 }
 .main__resto__titre {
   width: 100%;
@@ -464,7 +473,8 @@ a {
   margin-top: 60px;
 }
 .main__resto__article {
-  width: 100%;
+  min-width: 315px;
+  max-width: 315px;
   height: 200px;
   box-shadow: 0px 4px 4px 2px #dcdbdb;
   border-radius: 20px;
@@ -483,13 +493,20 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 80px;
-  height: 30px;
-  border-radius: 0px 20px 0px 0px;
-  background: green;
+  width: 85px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main__resto__article__photo__promo__nouveau {
+  width: 65px;
+  height: 25px;
+  padding: 5px;
+  background-color: rgb(153, 226, 208);
+  color: rgb(19, 146, 116);
+  font-weight: 600;
+  font-size: 12px;
 }
 .main__resto__article__contenu {
   height: 50px;
