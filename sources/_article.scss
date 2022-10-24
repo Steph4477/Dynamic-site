@@ -3,20 +3,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: 400px;
+    height: 500px;
     padding-left: 10px;
-    
     @media all and (max-width: 768px){
-        width: 50%;
         margin: 25px;
-        height: 1000px;
     }
     &__titre{
         width: 100%;
         height: 60px;
-        
         font-weight: 900;
         text-align: center;
+        margin-top: 30px;
         @media all and (max-width: 768px){
             text-align: left;
         }
@@ -24,12 +21,14 @@
     &__article{
         min-width: 315px;
         max-width: 315px;
-        
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         height: 200px;
         box-shadow: 0px 4px 4px 2px  #dcdbdb;
         border-radius: 20px;
         position: relative;
+        @media all and (max-width: 768px){
+            margin: 0 0 40px 0; 
+        }
         &__photo{
             position: relative;
             &__image{
@@ -62,7 +61,6 @@
             height: 50px;
             padding: 10px;
         }
-        
         &__coeur{
             cursor: pointer;
             font-size: 24px;
@@ -70,6 +68,9 @@
             bottom: 35px;
             left: 283px;
         }
+        &__coeur:active{
+            color: linear-gradient(bottom, $color-primary, $color-secondary);
+        }   
         &__coeur2{
             cursor: pointer;
             font-size: 24px;
@@ -82,19 +83,11 @@
         &__coeur2:hover{
             cursor: pointer;
             color: linear-gradient(bottom, $color-primary, $color-secondary);
-            animation: opacité 2s linear;
+            animation: cache 2s linear;
             animation-fill-mode: forwards;
+        }
+        &__coeur2:active{
+            color: linear-gradient(bottom, $color-primary, $color-secondary);
         }   
     } 
 }
-@keyframes opacité{
-    0% {
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-   
-    
-    
