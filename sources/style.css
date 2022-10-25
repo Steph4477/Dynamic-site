@@ -404,8 +404,6 @@ a {
   justify-content: space-between;
   margin-top: 40px;
   padding: 0;
-  width: 28%;
-  height: 400px;
 }
 @media all and (max-width: 768px) {
   .main__filtre {
@@ -414,8 +412,14 @@ a {
 }
 .main__filtre__titre {
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-weight: 900;
+  height: 60px;
+}
+@media all and (max-width: 768px) {
+  .main__filtre__titre {
+    text-align: left;
+  }
 }
 .main__filtre__bouton {
   display: flex;
@@ -428,6 +432,12 @@ a {
   position: relative;
   box-shadow: 0px 4px 4px 2px #dcdbdb;
   margin-left: 15px;
+  margin-bottom: 15px;
+}
+@media all and (max-width: 768px) {
+  .main__filtre__bouton {
+    text-align: left;
+  }
 }
 .main__filtre__bouton__N {
   max-height: 30px;
@@ -474,7 +484,7 @@ a {
 }
 .main__resto__titre {
   width: 100%;
-  height: 60px;
+  margin-bottom: 40px;
   font-weight: 900;
   text-align: center;
   margin-top: 30px;
