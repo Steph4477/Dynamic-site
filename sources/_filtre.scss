@@ -9,14 +9,12 @@
     height: 400px;
     @media all and (max-width: 768px){
         width: 80%;
-        
     }
     &__titre{
         width: 100%;
         text-align: left;
         font-weight: 900;
     }
-
     &__bouton{
         display: flex;
         max-width: 300px;

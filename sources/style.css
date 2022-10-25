@@ -248,6 +248,16 @@ body {
   flex-direction: column;
 }
 
+footer {
+  -webkit-animation: cache 5s linear;
+          animation: cache 5s linear;
+  background-color: rgb(53, 53, 53);
+}
+
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -457,12 +467,12 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  height: 500px;
   padding-left: 10px;
 }
 @media all and (max-width: 768px) {
   .main__resto {
     margin: 25px;
+    width: calc(100% - 50px);
   }
 }
 .main__resto__titre {
@@ -553,4 +563,9 @@ a {
 }
 .main__resto__article__coeur2:active {
   color: linear-gradient(bottom, #9356DC, #FF79DA);
+}
+
+.footer__liste {
+  height: 200px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
