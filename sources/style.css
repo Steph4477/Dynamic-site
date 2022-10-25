@@ -409,7 +409,7 @@ a {
 }
 @media all and (max-width: 768px) {
   .main__filtre {
-    width: 80%;
+    width: 95%;
   }
 }
 .main__filtre__titre {
@@ -466,13 +466,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
-  padding-left: 10px;
 }
 @media all and (max-width: 768px) {
   .main__resto {
-    margin: 25px;
-    width: calc(100% - 50px);
+    width: 95%;
   }
 }
 .main__resto__titre {
