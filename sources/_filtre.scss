@@ -4,10 +4,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
-    padding: 0;
     
     @media all and (max-width: 768px){
-        width: 95%;
+        width: 90%;
     }
     &__titre{
         width: 100%;

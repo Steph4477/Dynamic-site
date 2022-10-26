@@ -1,5 +1,21 @@
 
-.footer__liste{
-    height: 200px;
+.footer{
     width: 100%;
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    padding: 10px 0 30px 22px;
+    @media all and (max-width: 768px){
+        text-align: left;
+    }
+    &__titre{
+        font-family: "Shrikhand", sans-serif;
+        height: 60px;
+        font-size: 22px;
+        padding-top: 10px;
+        color: rgb(255, 255, 255);
+    }
+    &__lien{ 
+        color: rgb(255, 255, 255);
+        line-height: 25px;
+    }
 }

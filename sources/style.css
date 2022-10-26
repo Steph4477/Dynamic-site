@@ -251,7 +251,6 @@ body {
 footer {
   -webkit-animation: cache 5s linear;
           animation: cache 5s linear;
-  background-color: rgb(53, 53, 53);
 }
 
 ul {
@@ -403,11 +402,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
-  padding: 0;
 }
 @media all and (max-width: 768px) {
   .main__filtre {
-    width: 95%;
+    width: 90%;
   }
 }
 .main__filtre__titre {
@@ -479,19 +477,20 @@ a {
 }
 @media all and (max-width: 768px) {
   .main__resto {
-    width: 95%;
+    width: 90%;
   }
 }
 .main__resto__titre {
   width: 100%;
   margin-bottom: 40px;
   font-weight: 900;
-  text-align: center;
   margin-top: 30px;
+  padding-left: 15px;
 }
 @media all and (max-width: 768px) {
   .main__resto__titre {
     text-align: left;
+    padding: 0;
   }
 }
 .main__resto__article {
@@ -541,38 +540,52 @@ a {
   height: 50px;
   padding: 10px;
 }
+.main__resto__article__contenue__titre {
+  height: 25px;
+}
 .main__resto__article__coeur {
   cursor: pointer;
   font-size: 24px;
   position: relative;
   bottom: 35px;
-  left: 283px;
-}
-.main__resto__article__coeur:active {
-  color: linear-gradient(bottom, #9356DC, #FF79DA);
+  left: 263px;
 }
 .main__resto__article__coeur2 {
   cursor: pointer;
   font-size: 24px;
-  opacity: 0%;
+  opacity: 0;
   color: violet;
   position: relative;
   bottom: 35px;
-  left: 255px;
+  left: 235px;
 }
 .main__resto__article__coeur2:hover {
   cursor: pointer;
-  color: linear-gradient(bottom, #9356DC, #FF79DA);
   -webkit-animation: cache 2s linear;
           animation: cache 2s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.main__resto__article__coeur2:active {
-  color: linear-gradient(bottom, #9356DC, #FF79DA);
-}
 
-.footer__liste {
-  height: 200px;
+.footer {
   width: 100%;
+  text-align: center;
+  background-color: rgb(53, 53, 53);
+  padding: 10px 0 30px 22px;
+}
+@media all and (max-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+}
+.footer__titre {
+  font-family: "Shrikhand", sans-serif;
+  height: 60px;
+  font-size: 22px;
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+}
+.footer__lien {
+  color: rgb(255, 255, 255);
+  line-height: 25px;
 }/*# sourceMappingURL=style.css.map */
