@@ -74,7 +74,10 @@
             cursor: pointer;
             font-size: 24px;
             opacity: 0;
-            color: violet;
+            background: -webkit-linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             position: relative;
             bottom: 35px;
             left: 235px;

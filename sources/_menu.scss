@@ -1,0 +1,67 @@
+.header__en-tete{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    &__icone{
+        font-size: 20px;
+        width: 20%;
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        width: 80%;
+        font-family: "Shrikhand", sans-serif;
+    }
+}
+.header__photo{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.menu__en-tete{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    &__titre{
+        width: 95%;
+        font-family: "Shrikhand", sans-serif;
+        font-size: 28px;
+        padding-left: 20px;
+        
+    }
+    &__icone{
+        width: 10%;
+        
+        &__coeur{
+           
+            
+            font-size: 30px;
+        }
+        &__conteneur{
+            width: 10%;
+            position: absolute;
+            bottom: 26px;
+            &__coeur2{
+                opacity: 0;
+                background: -webkit-linear-gradient($color-primary, $color-secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 30px;
+
+            }
+            &__coeur2:hover{
+                cursor: pointer;
+                animation: cache 2s linear;
+                animation-fill-mode: forwards;
+            }      
+        }
+    }
+    
+   
+}

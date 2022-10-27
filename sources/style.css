@@ -554,7 +554,10 @@ a {
   cursor: pointer;
   font-size: 24px;
   opacity: 0;
-  color: violet;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   position: relative;
   bottom: 35px;
   left: 235px;
@@ -588,4 +591,70 @@ a {
 .footer__lien {
   color: rgb(255, 255, 255);
   line-height: 25px;
+}
+
+.header__en-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.header__en-tete__icone {
+  font-size: 20px;
+  width: 20%;
+}
+.header__en-tete__logo {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  width: 80%;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.header__photo {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__en-tete {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+.menu__en-tete__titre {
+  width: 95%;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  padding-left: 20px;
+}
+.menu__en-tete__icone {
+  width: 10%;
+}
+.menu__en-tete__icone__coeur {
+  font-size: 30px;
+}
+.menu__en-tete__icone__conteneur {
+  width: 10%;
+  position: absolute;
+  bottom: 26px;
+}
+.menu__en-tete__icone__conteneur__coeur2 {
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+}
+.menu__en-tete__icone__conteneur__coeur2:hover {
+  cursor: pointer;
+  -webkit-animation: cache 2s linear;
+          animation: cache 2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }/*# sourceMappingURL=style.css.map */
