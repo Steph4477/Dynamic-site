@@ -31,15 +31,11 @@
         width: 95%;
         font-family: "Shrikhand", sans-serif;
         font-size: 28px;
-        padding-left: 20px;
-        
+        padding-left: 20px;  
     }
     &__icone{
         width: 10%;
-        
         &__coeur{
-           
-            
             font-size: 30px;
         }
         &__conteneur{
@@ -53,15 +49,19 @@
                 -webkit-background-clip: text;
                 color: transparent;
                 font-size: 30px;
-
             }
             &__coeur2:hover{
                 cursor: pointer;
                 animation: cache 2s linear;
                 animation-fill-mode: forwards;
+            }
+            &__coeur2:active{
+                @media all and (max-width: 768px){
+                    cursor: pointer;
+                    animation: cache 2s linear;
+                    animation-fill-mode: forwards;
+                }
             }      
         }
     }
-    
-   
 }

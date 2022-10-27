@@ -569,6 +569,15 @@ a {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+@media all and (max-width: 768px) {
+  .main__resto__article__coeur2:active {
+    cursor: pointer;
+    -webkit-animation: cache 2s linear;
+            animation: cache 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
 
 .footer {
   width: 100%;
@@ -657,4 +666,13 @@ a {
           animation: cache 2s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+@media all and (max-width: 768px) {
+  .menu__en-tete__icone__conteneur__coeur2:active {
+    cursor: pointer;
+    -webkit-animation: cache 2s linear;
+            animation: cache 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
 }/*# sourceMappingURL=style.css.map */

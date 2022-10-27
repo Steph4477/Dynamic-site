@@ -81,6 +81,7 @@
             position: relative;
             bottom: 35px;
             left: 235px;
+
             
         }    
         &__coeur2:hover{
@@ -88,6 +89,12 @@
             animation: cache 2s linear;
             animation-fill-mode: forwards;
         }      
-          
+        &__coeur2:active{
+            @media all and (max-width: 768px){
+                cursor: pointer;
+                animation: cache 2s linear;
+                animation-fill-mode: forwards;
+            } 
+        } 
     } 
 }
