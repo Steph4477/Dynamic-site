@@ -7,16 +7,15 @@ $color-tertiary: #99E2D0;
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s linear;
     animation-fill-mode: forwards;
+    
     &__container{
-        
         width: 60%;
-       
         display: flex;
         position: fixed;
         left:0;
         right:0;
-        bottom:100;
-        top: 50;
+        bottom: 0;
+        top: 0;
         z-index: -10;
         padding-top: 20px;
         &__O{
@@ -71,8 +70,6 @@ $color-tertiary: #99E2D0;
     animation: loader 3s linear;
     animation-fill-mode: forwards;
     z-index: -10;
-    
-    
     &__container{
         display: flex;
         margin: auto;
@@ -81,7 +78,7 @@ $color-tertiary: #99E2D0;
         right:0;
         top: 0.5;
         bottom: 0;
-        padding-bottom: 200px;
+        padding-bottom: 100px;
         &__assiette{
             width: 300px;
             height: 300px;
