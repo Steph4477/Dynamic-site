@@ -8,15 +8,15 @@
           animation-fill-mode: forwards;
 }
 .logo__container {
-  width: 50%;
-  height: 100%;
+  width: 60%;
   display: flex;
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 100;
   top: 50;
-  z-index: -100;
+  z-index: -10;
+  padding-top: 20px;
 }
 .logo__container__O {
   fill: #9356DC;
@@ -86,7 +86,6 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: -10;
-  height: 600px;
 }
 .chargement__container {
   display: flex;
@@ -94,15 +93,16 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 200;
+  top: 0.5;
+  bottom: 0;
+  padding-bottom: 200px;
 }
 .chargement__container__assiette {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
-  scale: 0.5;
+  scale: 0.8;
   background: #ab98c2;
 }
 .chargement__container__assiette__fond {
@@ -135,7 +135,7 @@
 }
 .chargement__container__assiette__fond__centre__container-fourchette__fourchette {
   position: absolute;
-  scale: 0.2;
+  scale: 0.25;
   top: -430px;
   left: -63px;
 }
@@ -169,33 +169,33 @@
 }
 @-webkit-keyframes loader {
   0% {
-    scale: 0.5;
+    scale: 0.8;
   }
   90% {
     scale: 1;
   }
   95% {
-    opacity: 1;
+    opacity: 1.2;
   }
   100% {
     opacity: 0;
-    scale: 1;
+    scale: 1.5;
     visibility: hidden;
   }
 }
 @keyframes loader {
   0% {
-    scale: 0.5;
+    scale: 0.8;
   }
   90% {
     scale: 1;
   }
   95% {
-    opacity: 1;
+    opacity: 1.2;
   }
   100% {
     opacity: 0;
-    scale: 1;
+    scale: 1.5;
     visibility: hidden;
   }
 }

@@ -7,23 +7,22 @@ $color-tertiary: #99E2D0;
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s linear;
     animation-fill-mode: forwards;
-    
     &__container{
         
-        width: 50%;
-        height: 100%;
+        width: 60%;
+       
         display: flex;
         position: fixed;
         left:0;
         right:0;
-        bottom:0;
+        bottom:100;
         top: 50;
-        z-index: -100;
+        z-index: -10;
+        padding-top: 20px;
         &__O{
             fill: $color-primary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 100ms;
-            
         }
         &__H{
             fill: $color-secondary;
@@ -72,22 +71,23 @@ $color-tertiary: #99E2D0;
     animation: loader 3s linear;
     animation-fill-mode: forwards;
     z-index: -10;
-    height: 600px;
+    
+    
     &__container{
         display: flex;
         margin: auto;
         position: fixed;
-        
         left:0;
         right:0;
-        top: 0;
-        bottom:200;
+        top: 0.5;
+        bottom: 0;
+        padding-bottom: 200px;
         &__assiette{
             width: 300px;
             height: 300px;
             border-radius: 50%;
             box-shadow: inset 0 -2px 1px rgb(72, 48, 32);
-            scale: (0.5);
+            scale: (0.8);
             background: #ab98c2;
             &__fond{
                 margin: 15%;
@@ -115,12 +115,11 @@ $color-tertiary: #99E2D0;
                         animation: rotate 6s infinite linear;
                         &__fourchette{
                             position: absolute;
-                            scale: (0.20);
+                            scale: (0.25);
                             top: -430px;
                             left: -63px;
                         }
                     }
-                    
                     &__container-couteau{
                         position: absolute;
                         top: 0;
@@ -150,17 +149,17 @@ $color-tertiary: #99E2D0;
 
 @keyframes loader{
     0% {
-       scale: 0.5;
+       scale: 0.8;
     }
     90%{
         scale: 1;
     }
     95% {
-        opacity: 1;
+        opacity: 1.2;
     }
     100% {
         opacity: 0;
-        scale: 1;
+        scale: 1.5;
         visibility: hidden;
     }
 }
