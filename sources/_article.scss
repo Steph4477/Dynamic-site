@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media all and (max-width: 768px){
+    @media all and (min-width: 768px){
         width: 90%;
     }
     &__titre{
@@ -11,21 +11,23 @@
         font-weight: 900;
         margin-top: 30px;
         padding-left: 15px;
-        @media all and (max-width: 768px){
-            text-align: left;
-            padding: 0;
+        @media all and (min-width: 768px){
+            text-align: center; 
         }
     }
     &__article{
-        min-width: 315px;
-        max-width: 315px;
+        width: 95%;
         margin-bottom: 40px;
         height: 200px;
         box-shadow: 0px 4px 4px 2px  #dcdbdb;
         border-radius: 20px;
-        position: relative;
-        @media all and (max-width: 768px){
-            margin: 0 0 40px 0; 
+        @media all and (min-width: 768px){
+            margin: 0 0 40px 0;
+            width: 45%; 
+        }
+        @media all and (min-width: 992px){
+            width: 23%;
+            margin-left: 0;
         }
         &__photo{
             position: relative;
@@ -56,45 +58,53 @@
             }
         }
         &__contenue{
+            display: flex;
+            width: 100%;
             height: 50px;
             padding: 10px;
-            &__titre{
-                height: 25px;
+            &__texte{
+                width: 90%;
+                text-align: left;
+                &__titre{
+                    height: 25px;
+                }
+            }
+            &__icone{
+                width: 10%;
+                position: relative;
+                &__coeur{
+                    cursor: pointer;
+                    font-size: 24px;
+                    position: absolute;   
+                }
+                &__coeur2{
+                    cursor: pointer;
+                    font-size: 25px;
+                    opacity: 0;
+                    background: -webkit-linear-gradient($color-primary, $color-secondary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    position: absolute;
+                }    
+                &__coeur2:hover{
+                    cursor: pointer;
+                    animation: cache 800ms linear;
+                    animation-fill-mode: forwards;
+                }
+                &__coeur2:not(:hover){
+                    cursor: pointer;
+                    animation: sortie_cache 800ms linear;
+                    animation-fill-mode: forwards;
+                }      
+                &__coeur2:active{
+                    @media all and (min-width: 768px){
+                        cursor: pointer;
+                        animation: cache 400ms linear;
+                        animation-fill-mode: forwards;
+                    } 
+                } 
             }
         }
-        &__coeur{
-            cursor: pointer;
-            font-size: 24px;
-            position: relative;
-            bottom: 35px;
-            left: 263px;
-        }
-       
-        &__coeur2{
-            cursor: pointer;
-            font-size: 24px;
-            opacity: 0;
-            background: -webkit-linear-gradient($color-primary, $color-secondary);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            position: relative;
-            bottom: 35px;
-            left: 235px;
-
-            
-        }    
-        &__coeur2:hover{
-            cursor: pointer;
-            animation: cache 2s linear;
-            animation-fill-mode: forwards;
-        }      
-        &__coeur2:active{
-            @media all and (max-width: 768px){
-                cursor: pointer;
-                animation: cache 2s linear;
-                animation-fill-mode: forwards;
-            } 
-        } 
     } 
 }
