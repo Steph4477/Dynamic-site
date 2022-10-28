@@ -8,57 +8,67 @@
           animation-fill-mode: forwards;
 }
 .logo__container {
+  width: 50%;
+  height: 100%;
   display: flex;
   position: fixed;
   left: 0;
   right: 0;
-  top: 40px;
   bottom: 0;
-  z-index: -10;
+  top: 50;
+  z-index: -100;
 }
 .logo__container__O {
+  fill: #9356DC;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
 }
 .logo__container__H {
+  fill: #FF79DA;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 .logo__container__M {
+  fill: #99E2D0;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 700ms;
           animation-delay: 700ms;
 }
 .logo__container__Y {
+  fill: #9356DC;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
 .logo__container__F {
+  fill: #FF79DA;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 1300ms;
           animation-delay: 1300ms;
 }
 .logo__container__o {
+  fill: #99E2D0;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 .logo__container__0 {
+  fill: #9356DC;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 1900ms;
           animation-delay: 1900ms;
 }
 .logo__container__D {
+  fill: #FF79DA;
   -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 2200ms;
@@ -69,7 +79,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 50px;
+  top: 0;
   bottom: 0;
   -webkit-animation: loader 3s linear;
           animation: loader 3s linear;
@@ -84,8 +94,8 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 200px;
-  bottom: 0;
+  top: 0;
+  bottom: 200;
 }
 .chargement__container__assiette {
   width: 300px;

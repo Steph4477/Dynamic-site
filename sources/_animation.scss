@@ -7,43 +7,56 @@ $color-tertiary: #99E2D0;
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s linear;
     animation-fill-mode: forwards;
+    
     &__container{
+        
+        width: 50%;
+        height: 100%;
         display: flex;
         position: fixed;
         left:0;
         right:0;
-        top: 40px;
         bottom:0;
-        z-index: -10;
+        top: 50;
+        z-index: -100;
         &__O{
+            fill: $color-primary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 100ms;
+            
         }
         &__H{
+            fill: $color-secondary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 400ms;
         }
         &__M{
+            fill: $color-tertiary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 700ms;
         }
         &__Y{
+            fill: $color-primary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 1000ms;
         }
         &__F{
+            fill: $color-secondary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 1300ms;
         }
         &__o{
+            fill: $color-tertiary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 1600ms;
         }
         &__0{
+            fill: $color-primary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 1900ms;
         }
         &__D{
+            fill: $color-secondary;
             animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
             animation-delay: 2200ms;
         }
@@ -54,7 +67,7 @@ $color-tertiary: #99E2D0;
     position: fixed;
     left:0;
     right:0;
-    top: 50px;
+    top: 0;
     bottom:0;   
     animation: loader 3s linear;
     animation-fill-mode: forwards;
@@ -64,10 +77,11 @@ $color-tertiary: #99E2D0;
         display: flex;
         margin: auto;
         position: fixed;
+        
         left:0;
         right:0;
-        top: 200px;
-        bottom:0;
+        top: 0;
+        bottom:200;
         &__assiette{
             width: 300px;
             height: 300px;
