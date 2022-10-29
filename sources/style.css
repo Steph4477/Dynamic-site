@@ -785,7 +785,7 @@ a {
   border-radius: 20px;
 }
 .menu__plat__entree__header {
-  position: fixed;
+  position: absolute;
   padding-left: 20px;
   padding-top: 15px;
   line-height: 30px;
