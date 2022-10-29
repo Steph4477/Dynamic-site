@@ -755,6 +755,10 @@ a {
   flex-wrap: wrap;
   width: 100%;
   height: 60px;
+  -webkit-animation: cache 2s linear;
+          animation: cache 2s linear;
+  animation: cache 2s linear;
+  animation: cache 2s linear;
 }
 .menu__plat__titre {
   text-transform: uppercase;

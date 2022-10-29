@@ -167,5 +167,11 @@
                 }
             } 
         }   
+    
+        @for $delay from 0 to 3 {
+        animation: cache 2s linear;
+        }
+       
     }
+
 }
