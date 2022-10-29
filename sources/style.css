@@ -765,7 +765,7 @@ a {
   margin-bottom: 20px;
   position: relative;
 }
-.menu__plat__titre:after {
+.menu__plat__titre::after {
   content: "";
   width: 40px;
   height: 4px;
@@ -833,8 +833,10 @@ a {
   color: #99E2D0;
 }
 .menu__plat__entree:hover .menu__plat__entree__confirmation {
+  cursor: pointer;
   margin-right: -1px;
 }
 .menu__plat__entree:hover .menu__plat__entree__confirmation__animicone {
+  cursor: pointer;
   transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */
