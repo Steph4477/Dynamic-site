@@ -104,29 +104,36 @@
         }
         &__entree{
             display: flex; 
-            width: 93%;
+            width: 95%;
             height: 100px;
             overflow: hidden;
             position: relative;
             background: white;
             border-radius: 20px;
             &__header{
-                position: absolute;
-                padding-left: 20px;
+                width: 80%;
+                margin-left: 20px;
                 padding-top: 15px;
                 line-height: 30px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                
                 &__titre{
                     font-weight: 900;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
                 &__commentaire{
                     font-weight: 400;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
             &__prix{
-                width: 95%;
+                width: 10%;
                 padding-bottom: 30px;
                 font-weight: 900;
                 display: flex;
@@ -167,11 +174,8 @@
                 }
             } 
         }   
-    
         @for $delay from 0 to 3 {
         animation: cache 2s linear;
         }
-       
     }
-
 }

@@ -781,7 +781,7 @@ a {
 }
 .menu__plat__entree {
   display: flex;
-  width: 93%;
+  width: 95%;
   height: 100px;
   overflow: hidden;
   position: relative;
@@ -789,8 +789,8 @@ a {
   border-radius: 20px;
 }
 .menu__plat__entree__header {
-  position: absolute;
-  padding-left: 20px;
+  width: 80%;
+  margin-left: 20px;
   padding-top: 15px;
   line-height: 30px;
   white-space: nowrap;
@@ -799,12 +799,18 @@ a {
 }
 .menu__plat__entree__header__titre {
   font-weight: 900;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__plat__entree__header__commentaire {
   font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__plat__entree__prix {
-  width: 95%;
+  width: 10%;
   padding-bottom: 30px;
   font-weight: 900;
   display: flex;
