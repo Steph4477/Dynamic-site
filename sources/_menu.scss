@@ -6,43 +6,52 @@
     width: 100%;
     &__icone{
         font-size: 20px;
-        width: 20%;
+        width: 10%;
     }
     &__logo{
         display: flex;
         justify-content: center;
         font-size: 35px;
-        width: 80%;
+        width: 90%;
         font-family: "Shrikhand", sans-serif;
     }
 }
 .header__photo{
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-}
-.menu__en-tete{
-    display: flex;
-    align-items: center;
-    height: 80px;
-    width: 100%;
     position: relative;
-    &__titre{
-        width: 95%;
-        font-family: "Shrikhand", sans-serif;
-        font-size: 28px;
-        padding-left: 20px;  
-    }
-    &__icone{
-        width: 10%;
-        &__coeur{
-            font-size: 30px;
+    z-index: 5;
+}
+.menu{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(229, 229, 229);
+    margin-top: -60px;
+    border-radius: 55px 55px 0px 0px;
+    position: relative;
+    z-index: 10;
+    &__en-tete{
+        width: 100%;
+        display: flex;
+        padding-top: 50px;
+        &__titre{
+            font-family: "Shrikhand", sans-serif;
+            width: 90%;
+            height: 60px;
+            padding-left: 20px;
+            font-size: 25px;
         }
-        &__conteneur{
+        &__icone{
             width: 10%;
-            position: absolute;
-            bottom: 26px;
+            position: relative;
+            &__coeur{
+                font-size: 30px;
+            }
             &__coeur2{
+                position: absolute;
+                bottom: 30px;
+                left: 0;
                 opacity: 0;
                 background: -webkit-linear-gradient($color-primary, $color-secondary);
                 background-clip: text;
@@ -52,16 +61,114 @@
             }
             &__coeur2:hover{
                 cursor: pointer;
-                animation: cache 2s linear;
+                animation: cache 500ms linear;
                 animation-fill-mode: forwards;
             }
+            &__coeur2:not(:hover){
+                cursor: pointer;
+                animation: sortie_cache 500ms linear;
+                animation-fill-mode: forwards;
+            }      
             &__coeur2:active{
                 @media all and (max-width: 768px){
                     cursor: pointer;
-                    animation: cache 2s linear;
+                    animation: cache 500ms linear;
                     animation-fill-mode: forwards;
                 }
             }      
+            
         }
+    }
+    &__plat{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 60px;
+        &__titre{
+            text-transform: uppercase;
+            font-weight: normal;
+            padding-left: 16px;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+            position: relative;
+            &:after {
+                content: "";
+                width: 40px;
+                height: 4px;
+                background-color: $color-tertiary;
+                position: absolute;
+                left: 0;
+                bottom: 2px;
+                margin-left: 16px;  
+            }
+        }
+        &__entree{
+            display: flex; 
+            width: 93%;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            background: white;
+            border-radius: 20px;
+            &__header{
+                position: fixed;
+                padding-left: 20px;
+                padding-top: 15px;
+                line-height: 30px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                &__titre{
+                    font-weight: 900;
+                }
+                &__commentaire{
+                    font-weight: 400;
+                }
+            }
+            &__prix{
+                width: 95%;
+                padding-bottom: 30px;
+                font-weight: 900;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                margin-right: 10px;
+                font-size: 22px;
+            } 
+            &__confirmation {
+                background-color: $color-tertiary;
+                margin-right: -100px;
+                width: 100px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                transition-duration: 1.2s;
+                &__animicone {
+                    height: 30px;
+                    width: 30px;
+                    background-color: white;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    border-radius: 100px;
+                    transform: rotate(0);
+                    transition-duration: 1s; 
+                    &__icone {
+                        color: $color-tertiary;
+                    }
+                }
+            } 
+            &:hover &__confirmation {
+                margin-right: -1px;
+                
+                &__animicone {
+                    transform: rotate(360deg);
+                }
+            
+            } 
+           
+            
+        }   
     }
 }
