@@ -19,7 +19,7 @@ $color-tertiary: #99E2D0;
         height: 400px;
         width: 400px;
         filter: blur(72px);
-        background-image: linear-gradient(-45deg, $color-tertiary 50%, $color-primary 50%);
+        background: $color-primary;
         border-radius: 50%;
         display: flex;
         margin: auto;
@@ -30,7 +30,7 @@ $color-tertiary: #99E2D0;
 }
 .logo {
     animation: swing-top-fwd 4s linear;
-    animation: reset_opacity 4s linear;
+    animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11);
     animation-fill-mode: forwards;
     &__container{
         width: 60%;

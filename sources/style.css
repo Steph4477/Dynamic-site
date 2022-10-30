@@ -18,7 +18,7 @@
   height: 400px;
   width: 400px;
   filter: blur(72px);
-  background-image: linear-gradient(-45deg, #99E2D0 50%, #9356DC 50%);
+  background: #9356DC;
   border-radius: 50%;
   display: flex;
   margin: auto;
@@ -32,8 +32,8 @@
 .logo {
   -webkit-animation: swing-top-fwd 4s linear;
           animation: swing-top-fwd 4s linear;
-  -webkit-animation: reset_opacity 4s linear;
-          animation: reset_opacity 4s linear;
+  -webkit-animation: reset_opacity 4s cubic-bezier(1, -0.11, 1, 0.11);
+          animation: reset_opacity 4s cubic-bezier(1, -0.11, 1, 0.11);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -730,13 +730,13 @@ a {
 }
 .header__en-tete__icone {
   font-size: 20px;
-  width: 10%;
+  width: 25%;
 }
 .header__en-tete__logo {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  width: 90%;
+  width: 75%;
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -754,24 +754,23 @@ a {
   height: 900px;
   background-color: rgb(229, 229, 229);
   margin-top: -60px;
-  border-radius: 55px 55px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
   position: relative;
   z-index: 10;
 }
 .menu__en-tete {
   width: 100%;
   display: flex;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .menu__en-tete__titre {
   font-family: "Shrikhand", sans-serif;
   width: 90%;
-  height: 60px;
   padding-left: 20px;
   font-size: 20px;
 }
 .menu__en-tete__icone {
-  padding-right: 20px;
+  padding-right: 40px;
   position: relative;
 }
 .menu__en-tete__icone__coeur {
@@ -779,7 +778,6 @@ a {
 }
 .menu__en-tete__icone__coeur2 {
   position: absolute;
-  bottom: 39px;
   left: 0;
   opacity: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -811,24 +809,21 @@ a {
             animation-fill-mode: forwards;
   }
 }
-.menu__plat {
+.menu__repas {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  -webkit-animation: cache 2s linear;
-          animation: cache 2s linear;
-  animation: cache 2s linear;
-  animation: cache 2s linear;
 }
-.menu__plat__titre {
+.menu__repas__titre {
   text-transform: uppercase;
   font-weight: normal;
   padding-left: 20px;
   width: 100%;
   height: 30px;
   position: relative;
+  margin-top: 40px;
 }
-.menu__plat__titre::after {
+.menu__repas__titre::after {
   content: "";
   width: 40px;
   height: 4px;
@@ -838,40 +833,50 @@ a {
   bottom: 2px;
   margin-left: 20px;
 }
-.menu__plat__entree {
+.menu__repas__entree {
+  -webkit-animation: cache infinite linear;
+          animation: cache infinite linear;
+  transition: 1s;
+}
+.menu__repas__plat {
+  -webkit-animation: cache infinite linear;
+          animation: cache infinite linear;
+  transition: 5s;
+}
+.menu__repas__entree, .menu__repas__plat {
   display: flex;
   width: 100%;
-  margin-left: 20px;
-  margin: 20px;
+  margin: 10px 20px 10px 20px;
   width: calc(100% - 40px);
-  height: 80px;
+  height: 70px;
   overflow: hidden;
   position: relative;
   background: white;
   border-radius: 20px;
+  opacity: 0%;
 }
-.menu__plat__entree__header {
+.menu__repas__entree__header, .menu__repas__plat__header {
   width: 80%;
   padding-top: 10px;
   margin-left: 10px;
-  line-height: 30px;
+  line-height: 25px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__plat__entree__header__titre {
+.menu__repas__entree__header__titre, .menu__repas__plat__header__titre {
   font-weight: 900;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__plat__entree__header__commentaire {
+.menu__repas__entree__header__commentaire, .menu__repas__plat__header__commentaire {
   font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__plat__entree__prix {
+.menu__repas__entree__prix, .menu__repas__plat__prix {
   width: 10%;
   padding-bottom: 15px;
   font-weight: 900;
@@ -881,18 +886,18 @@ a {
   margin-right: 10px;
   font-size: 15px;
 }
-.menu__plat__entree__confirmation {
+.menu__repas__entree__confirmation, .menu__repas__plat__confirmation {
   background-color: #99E2D0;
-  margin-right: -100px;
-  width: 100px;
+  margin-right: -80px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 1.2s;
 }
-.menu__plat__entree__confirmation__animicone {
-  height: 30px;
-  width: 30px;
+.menu__repas__entree__confirmation__animicone, .menu__repas__plat__confirmation__animicone {
+  height: 20px;
+  width: 20px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -901,14 +906,15 @@ a {
   transform: rotate(0);
   transition-duration: 1s;
 }
-.menu__plat__entree__confirmation__animicone__icone {
+.menu__repas__entree__confirmation__animicone__icone, .menu__repas__plat__confirmation__animicone__icone {
   color: #99E2D0;
+  font-size: 14px;
 }
-.menu__plat__entree:hover .menu__plat__entree__confirmation {
+.menu__repas__entree:hover .menu__repas__entree__confirmation, .menu__repas__entree:hover .menu__repas__plat__confirmation, .menu__repas__plat:hover .menu__repas__entree__confirmation, .menu__repas__plat:hover .menu__repas__plat__confirmation {
   cursor: pointer;
   margin-right: -1px;
 }
-.menu__plat__entree:hover .menu__plat__entree__confirmation__animicone {
+.menu__repas__entree:hover .menu__repas__entree__confirmation__animicone, .menu__repas__entree:hover .menu__repas__plat__confirmation__animicone, .menu__repas__plat:hover .menu__repas__entree__confirmation__animicone, .menu__repas__plat:hover .menu__repas__plat__confirmation__animicone {
   cursor: pointer;
   transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */
