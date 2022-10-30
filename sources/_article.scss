@@ -46,6 +46,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                scale: (1);
+                animation: pulsation 1s infinite linear;
                 &__nouveau{
                     width: 65px;
                     height: 25px;
