@@ -833,16 +833,6 @@ a {
   bottom: 2px;
   margin-left: 20px;
 }
-.menu__repas__entree {
-  -webkit-animation: cache infinite linear;
-          animation: cache infinite linear;
-  transition: 1s;
-}
-.menu__repas__plat {
-  -webkit-animation: cache infinite linear;
-          animation: cache infinite linear;
-  transition: 5s;
-}
 .menu__repas__entree, .menu__repas__plat {
   display: flex;
   width: 100%;
@@ -853,7 +843,6 @@ a {
   position: relative;
   background: white;
   border-radius: 20px;
-  opacity: 0%;
 }
 .menu__repas__entree__header, .menu__repas__plat__header {
   width: 80%;
