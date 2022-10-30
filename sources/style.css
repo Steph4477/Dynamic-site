@@ -296,7 +296,11 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
 }
 
 body {
@@ -498,7 +502,7 @@ a {
   text-align: left;
   font-weight: 900;
   height: 60px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 @media all and (min-width: 768px) {
   .main__filtre__titre {
@@ -507,16 +511,16 @@ a {
 }
 .main__filtre__bouton {
   display: flex;
-  width: 90%;
-  height: 80px;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   position: relative;
   box-shadow: 0px 4px 4px 2px #dcdbdb;
-  margin-left: 25px;
-  margin-bottom: 15px;
-  margin-right: 5px;
+  background-color: #f6f6f6;
+  width: 100%;
+  margin: 0 20px 20px 30px;
+  width: calc(100% - 50px);
+  height: 70px;
 }
 @media all and (min-width: 768px) {
   .main__filtre__bouton {
@@ -531,23 +535,24 @@ a {
   }
 }
 .main__filtre__bouton__N {
-  max-height: 30px;
-  min-height: 30px;
-  max-width: 30px;
-  min-width: 30px;
+  max-height: 25px;
+  min-height: 25px;
+  max-width: 25px;
+  min-width: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background: #9356DC;
   color: white;
+  font-size: 12px;
   position: relative;
   top: 0;
   left: -15px;
 }
 .main__filtre__bouton__icone {
-  font-size: 25px;
-  width: 20%;
+  font-size: 20px;
+  width: 15%;
   padding-left: 10px;
   color: #a2a1a1;
 }
@@ -578,7 +583,7 @@ a {
   margin-bottom: 40px;
   font-weight: 900;
   margin-top: 30px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 @media all and (min-width: 768px) {
   .main__resto__titre {
@@ -586,9 +591,11 @@ a {
   }
 }
 .main__resto__article {
-  width: 95%;
+  width: 100%;
+  margin: 0 20px 0 20px;
+  width: calc(100% - 40px);
+  height: 220px;
   margin-bottom: 40px;
-  height: 200px;
   box-shadow: 0px 4px 4px 2px #dcdbdb;
   border-radius: 20px;
 }
@@ -611,7 +618,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 120px;
+  height: 150px;
   border-radius: 20px 20px 0 0;
 }
 .main__resto__article__photo__promo {
@@ -639,7 +646,6 @@ a {
 .main__resto__article__contenue {
   display: flex;
   width: 100%;
-  height: 50px;
   padding: 10px;
 }
 .main__resto__article__contenue__texte {
@@ -647,7 +653,7 @@ a {
   text-align: left;
 }
 .main__resto__article__contenue__texte__titre {
-  height: 25px;
+  height: 22px;
 }
 .main__resto__article__contenue__icone {
   width: 10%;
@@ -729,7 +735,7 @@ a {
 .header__en-tete__logo {
   display: flex;
   justify-content: center;
-  font-size: 35px;
+  font-size: 30px;
   width: 90%;
   font-family: "Shrikhand", sans-serif;
 }
@@ -762,25 +768,25 @@ a {
   width: 90%;
   height: 60px;
   padding-left: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .menu__en-tete__icone {
-  width: 10%;
+  padding-right: 20px;
   position: relative;
 }
 .menu__en-tete__icone__coeur {
-  font-size: 30px;
+  font-size: 20px;
 }
 .menu__en-tete__icone__coeur2 {
   position: absolute;
-  bottom: 30px;
+  bottom: 39px;
   left: 0;
   opacity: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 30px;
+  font-size: 21px;
 }
 .menu__en-tete__icone__coeur2:hover {
   cursor: pointer;
@@ -809,7 +815,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 60px;
   -webkit-animation: cache 2s linear;
           animation: cache 2s linear;
   animation: cache 2s linear;
@@ -818,10 +823,9 @@ a {
 .menu__plat__titre {
   text-transform: uppercase;
   font-weight: normal;
-  padding-left: 16px;
+  padding-left: 20px;
   width: 100%;
   height: 30px;
-  margin-bottom: 20px;
   position: relative;
 }
 .menu__plat__titre::after {
@@ -832,12 +836,15 @@ a {
   position: absolute;
   left: 0;
   bottom: 2px;
-  margin-left: 16px;
+  margin-left: 20px;
 }
 .menu__plat__entree {
   display: flex;
-  width: 95%;
-  height: 100px;
+  width: 100%;
+  margin-left: 20px;
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: 80px;
   overflow: hidden;
   position: relative;
   background: white;
@@ -845,8 +852,8 @@ a {
 }
 .menu__plat__entree__header {
   width: 80%;
-  margin-left: 20px;
-  padding-top: 15px;
+  padding-top: 10px;
+  margin-left: 10px;
   line-height: 30px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -866,13 +873,13 @@ a {
 }
 .menu__plat__entree__prix {
   width: 10%;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   font-weight: 900;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   margin-right: 10px;
-  font-size: 22px;
+  font-size: 15px;
 }
 .menu__plat__entree__confirmation {
   background-color: #99E2D0;

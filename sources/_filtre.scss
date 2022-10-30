@@ -13,23 +13,23 @@
         text-align: left;
         font-weight: 900;
         height: 60px;
-        margin-left: 15px;
+        margin-left: 20px;
         @media all and (min-width: 768px){
             text-align: center;
         }
     }
     &__bouton{
         display: flex;
-        width: 90%;
-        height: 80px;
         justify-content: center;
         align-items: center;
         border-radius: 25px;
         position: relative;
         box-shadow: 0px 4px 4px 2px  #dcdbdb;
-        margin-left: 25px;
-        margin-bottom: 15px;
-        margin-right: 5px;
+        background-color: #f6f6f6;
+        width: 100%;
+        margin: 0 20px 20px 30px;
+        width: calc(100% - 50px);
+        height: 70px;
         @media all and (min-width: 768px){
             width: 45%;
             margin-left: 10px;
@@ -39,23 +39,24 @@
             width: 30%;
         }
         &__N{
-            max-height: 30px;
-            min-height: 30px;
-            max-width: 30px;
-            min-width: 30px;
+            max-height: 25px;
+            min-height: 25px;
+            max-width: 25px;
+            min-width: 25px;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
             background: $color-primary;
             color: white;
+            font-size: 12px;
             position: relative;
             top: 0;
             left: -15px;
         }
         &__icone{
-            font-size: 25px;
-            width: 20%;
+            font-size: 20px;
+            width: 15%;
             padding-left: 10px;
             color: #a2a1a1;
         }
