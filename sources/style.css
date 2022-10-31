@@ -283,6 +283,22 @@
     visibility: hidden;
   }
 }
+@-webkit-keyframes apparition {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -751,7 +767,6 @@ a {
 
 .menu {
   width: 100%;
-  height: 900px;
   background-color: rgb(229, 229, 229);
   margin-top: -60px;
   border-radius: 40px 40px 0px 0px;
@@ -833,7 +848,7 @@ a {
   bottom: 2px;
   margin-left: 20px;
 }
-.menu__repas__entree, .menu__repas__plat {
+.menu__repas__entree, .menu__repas__plat, .menu__repas__desserts {
   display: flex;
   width: 100%;
   margin: 10px 20px 10px 20px;
@@ -843,9 +858,15 @@ a {
   position: relative;
   background: white;
   border-radius: 20px;
+  -webkit-animation: apparition 0.6s;
+          animation: apparition 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
-.menu__repas__entree__header, .menu__repas__plat__header {
-  width: 80%;
+.menu__repas__entree__header, .menu__repas__plat__header, .menu__repas__desserts__header {
+  width: 95%;
   padding-top: 10px;
   margin-left: 10px;
   line-height: 25px;
@@ -853,20 +874,19 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__repas__entree__header__titre, .menu__repas__plat__header__titre {
+.menu__repas__entree__header__titre, .menu__repas__plat__header__titre, .menu__repas__desserts__header__titre {
   font-weight: 900;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__repas__entree__header__commentaire, .menu__repas__plat__header__commentaire {
+.menu__repas__entree__header__commentaire, .menu__repas__plat__header__commentaire, .menu__repas__desserts__header__commentaire {
   font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__repas__entree__prix, .menu__repas__plat__prix {
-  width: 10%;
+.menu__repas__entree__prix, .menu__repas__plat__prix, .menu__repas__desserts__prix {
   padding-bottom: 15px;
   font-weight: 900;
   display: flex;
@@ -875,7 +895,7 @@ a {
   margin-right: 10px;
   font-size: 15px;
 }
-.menu__repas__entree__confirmation, .menu__repas__plat__confirmation {
+.menu__repas__entree__confirmation, .menu__repas__plat__confirmation, .menu__repas__desserts__confirmation {
   background-color: #99E2D0;
   margin-right: -80px;
   width: 80px;
@@ -884,26 +904,94 @@ a {
   justify-content: center;
   transition-duration: 1.2s;
 }
-.menu__repas__entree__confirmation__animicone, .menu__repas__plat__confirmation__animicone {
+.menu__repas__entree__confirmation__animicone, .menu__repas__plat__confirmation__animicone, .menu__repas__desserts__confirmation__animicone {
   height: 20px;
   width: 20px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
+  border-radius: 100%;
   transform: rotate(0);
   transition-duration: 1s;
 }
-.menu__repas__entree__confirmation__animicone__icone, .menu__repas__plat__confirmation__animicone__icone {
+.menu__repas__entree__confirmation__animicone__icone, .menu__repas__plat__confirmation__animicone__icone, .menu__repas__desserts__confirmation__animicone__icone {
   color: #99E2D0;
   font-size: 14px;
 }
-.menu__repas__entree:hover .menu__repas__entree__confirmation, .menu__repas__entree:hover .menu__repas__plat__confirmation, .menu__repas__plat:hover .menu__repas__entree__confirmation, .menu__repas__plat:hover .menu__repas__plat__confirmation {
+.menu__repas__entree:hover .menu__repas__entree__confirmation, .menu__repas__entree:hover .menu__repas__plat__confirmation, .menu__repas__entree:hover .menu__repas__desserts__confirmation, .menu__repas__plat:hover .menu__repas__entree__confirmation, .menu__repas__plat:hover .menu__repas__plat__confirmation, .menu__repas__plat:hover .menu__repas__desserts__confirmation, .menu__repas__desserts:hover .menu__repas__entree__confirmation, .menu__repas__desserts:hover .menu__repas__plat__confirmation, .menu__repas__desserts:hover .menu__repas__desserts__confirmation {
   cursor: pointer;
-  margin-right: -1px;
+  margin-right: 0;
 }
-.menu__repas__entree:hover .menu__repas__entree__confirmation__animicone, .menu__repas__entree:hover .menu__repas__plat__confirmation__animicone, .menu__repas__plat:hover .menu__repas__entree__confirmation__animicone, .menu__repas__plat:hover .menu__repas__plat__confirmation__animicone {
+.menu__repas__entree:hover .menu__repas__entree__confirmation__animicone, .menu__repas__entree:hover .menu__repas__plat__confirmation__animicone, .menu__repas__entree:hover .menu__repas__desserts__confirmation__animicone, .menu__repas__plat:hover .menu__repas__entree__confirmation__animicone, .menu__repas__plat:hover .menu__repas__plat__confirmation__animicone, .menu__repas__plat:hover .menu__repas__desserts__confirmation__animicone, .menu__repas__desserts:hover .menu__repas__entree__confirmation__animicone, .menu__repas__desserts:hover .menu__repas__plat__confirmation__animicone, .menu__repas__desserts:hover .menu__repas__desserts__confirmation__animicone {
   cursor: pointer;
   transform: rotate(360deg);
+}
+.menu__bouton {
+  height: 120px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.menu__bouton__titre {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  padding: 18px;
+  border-radius: 10%/50%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 4px 2px #cfcece;
+}
+.menu__bouton__titre:hover {
+  box-shadow: 0px 2px 2px 2px #4c4c4c;
+  background: linear-gradient(#f89fdf, #b48fe0);
+}
+
+.delay-0 {
+  -webkit-animation-delay: 0s !important;
+          animation-delay: 0s !important;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.8s !important;
+          animation-delay: 0.8s !important;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 1.6s !important;
+          animation-delay: 1.6s !important;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 2.4s !important;
+          animation-delay: 2.4s !important;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 3.2s !important;
+          animation-delay: 3.2s !important;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 4s !important;
+          animation-delay: 4s !important;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 4.8s !important;
+          animation-delay: 4.8s !important;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 5.6s !important;
+          animation-delay: 5.6s !important;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 6.4s !important;
+          animation-delay: 6.4s !important;
 }/*# sourceMappingURL=style.css.map */
