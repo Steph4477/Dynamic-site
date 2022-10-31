@@ -828,6 +828,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  -webkit-animation: apparition 2s;
+          animation: apparition 2s;
+  transform-origin: left;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .menu__repas__titre {
   text-transform: uppercase;
@@ -858,12 +865,6 @@ a {
   position: relative;
   background: white;
   border-radius: 20px;
-  -webkit-animation: apparition 0.6s;
-          animation: apparition 0.6s;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
 }
 .menu__repas__entree__header, .menu__repas__plat__header, .menu__repas__desserts__header {
   width: 95%;
@@ -964,34 +965,4 @@ a {
 .delay-2 {
   -webkit-animation-delay: 1.6s !important;
           animation-delay: 1.6s !important;
-}
-
-.delay-3 {
-  -webkit-animation-delay: 2.4s !important;
-          animation-delay: 2.4s !important;
-}
-
-.delay-4 {
-  -webkit-animation-delay: 3.2s !important;
-          animation-delay: 3.2s !important;
-}
-
-.delay-5 {
-  -webkit-animation-delay: 4s !important;
-          animation-delay: 4s !important;
-}
-
-.delay-6 {
-  -webkit-animation-delay: 4.8s !important;
-          animation-delay: 4.8s !important;
-}
-
-.delay-7 {
-  -webkit-animation-delay: 5.6s !important;
-          animation-delay: 5.6s !important;
-}
-
-.delay-8 {
-  -webkit-animation-delay: 6.4s !important;
-          animation-delay: 6.4s !important;
 }/*# sourceMappingURL=style.css.map */

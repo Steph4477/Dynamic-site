@@ -79,6 +79,10 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        animation: apparition 2s;
+        transform-origin: left;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        animation-fill-mode: both;
         &__titre{
             text-transform: uppercase;
             font-weight: normal;
@@ -108,9 +112,6 @@
             position: relative;
             background: white;
             border-radius: 20px;
-            animation: apparition .6s;
-            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-            animation-fill-mode: both;
             &__header{
                 width: 95%;
                 padding-top: 10px;
@@ -200,7 +201,7 @@
     }
 }
 
-@for $i from 0 to 9 {
+@for $i from 0 to 3 {
     .delay-#{$i} {
       animation-delay: 0.8s * $i !important;
     }
