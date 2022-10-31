@@ -215,9 +215,9 @@ $color-tertiary: #99E2D0;
 }
 @keyframes apparition {
     0% {
-        transform: scale(0)
+        transform: scaleX(0)
     }
     100% {
-      transform: scale(1);
+      transform: scaleX(1);
     }
   }
