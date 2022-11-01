@@ -30,6 +30,7 @@
     border-radius: 40px 40px 0px 0px;
     position: relative;
     z-index: 10;
+   
     &__en-tete{
         width: 100%;
         display: flex;
@@ -75,103 +76,115 @@
             }      
         }
     }
-    &__repas{
+    &__carte{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        animation: apparition 2s;
-        transform-origin: left;
-        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-        animation-fill-mode: both;
-        &__titre{
-            text-transform: uppercase;
-            font-weight: normal;
-            padding-left: 20px;
-            width: 100%;
-            height: 30px;
-            position: relative;
-            margin-top: 40px;
-            &::after {
-                content: "";
-                width: 40px;
-                height: 4px;
-                background-color: $color-tertiary;
-                position: absolute;
-                left: 0;
-                bottom: 2px;
-                margin-left: 20px;  
-            }
+        @media all and (min-width: 768px){
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0;
         }
-        &__entree, &__plat, &__desserts{
-            display: flex; 
+        &__repas{
+            display: flex;
+            flex-wrap: wrap;
             width: 100%;
-            margin: 10px 20px 10px 20px;
-            width: calc(100% - 40px);
-            height: 70px;
-            overflow: hidden;
-            position: relative;
-            background: white;
-            border-radius: 20px;
-            &__header{
-                width: 95%;
-                padding-top: 10px;
-                margin-left: 10px;
-                line-height: 25px;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                &__titre{
-                    font-weight: 900;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                }
-                &__commentaire{
-                    font-weight: 400;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
+            animation: apparition 2s;
+            transform-origin: left;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            @media all and (min-width: 768px){
+                width: 33%;
+            }
+            &__titre{
+                text-transform: uppercase;
+                font-weight: normal;
+                padding-left: 20px;
+                width: 100%;
+                height: 30px;
+                position: relative;
+                margin-top: 40px;
+                &::after {
+                    content: "";
+                    width: 40px;
+                    height: 4px;
+                    background-color: $color-tertiary;
+                    position: absolute;
+                    left: 0;
+                    bottom: 2px;
+                    margin-left: 20px;  
                 }
             }
-            &__prix{
-                padding-bottom: 15px;
-                font-weight: 900;
+            &__entree, &__plat, &__desserts{
                 display: flex;
-                align-items: flex-end;
-                justify-content: flex-end;
-                margin-right: 10px;
-                font-size: 15px;
-            } 
-            &__confirmation {
-                background-color: $color-tertiary;
-                margin-right: -80px;
-                width: 80px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                transition-duration: 1.2s;
-                &__animicone {
-                    height: 20px;
-                    width: 20px;
-                    background-color: white;
+                margin: 10px 20px 10px 20px;
+                width: calc(100% - 40px);
+                height: 70px;
+                overflow: hidden;
+                position: relative;
+                background: white;
+                border-radius: 20px;
+                &__header{
+                    width: 95%;
+                    padding-top: 10px;
+                    margin-left: 10px;
+                    line-height: 25px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    &__titre{
+                        font-weight: 900;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    &__commentaire{
+                        font-weight: 400;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+                &__prix{
+                    padding-bottom: 15px;
+                    font-weight: 900;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    margin-right: 10px;
+                    font-size: 15px;
+                } 
+                &__confirmation {
+                    background-color: $color-tertiary;
+                    margin-right: -80px;
+                    width: 80px;
                     display:flex;
                     align-items:center;
                     justify-content:center;
-                    border-radius: 100%;
-                    transform: rotate(0);
-                    transition-duration: 1s;
-                    &__icone {
-                        color: $color-tertiary;
-                        font-size: 14px;
+                    transition-duration: 1.2s;
+                    &__animicone {
+                        height: 20px;
+                        width: 20px;
+                        background-color: white;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        border-radius: 100%;
+                        transform: rotate(0);
+                        transition-duration: 1s;
+                        &__icone {
+                            color: $color-tertiary;
+                            font-size: 14px;
+                        }
                     }
                 }
-            } 
-            &:hover &__confirmation{
-                cursor: pointer;
-                margin-right: 0;
-                &__animicone {
+                &:hover &__confirmation{
                     cursor: pointer;
-                    transform: rotate(360deg);
+                    margin-right: 0;
+                    &__animicone {
+                        cursor: pointer;
+                        transform: rotate(360deg);
+                    }
                 }
             } 
         } 
@@ -199,6 +212,7 @@
             background: linear-gradient(#f89fdf, #b48fe0);
         }
     }
+    
 }
 
 @for $i from 0 to 3 {

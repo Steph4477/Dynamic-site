@@ -824,7 +824,19 @@ a {
             animation-fill-mode: forwards;
   }
 }
-.menu__repas {
+.menu__carte {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  .menu__carte {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+.menu__carte__repas {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -836,7 +848,12 @@ a {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.menu__repas__titre {
+@media all and (min-width: 768px) {
+  .menu__carte__repas {
+    width: 33%;
+  }
+}
+.menu__carte__repas__titre {
   text-transform: uppercase;
   font-weight: normal;
   padding-left: 20px;
@@ -845,7 +862,7 @@ a {
   position: relative;
   margin-top: 40px;
 }
-.menu__repas__titre::after {
+.menu__carte__repas__titre::after {
   content: "";
   width: 40px;
   height: 4px;
@@ -855,9 +872,8 @@ a {
   bottom: 2px;
   margin-left: 20px;
 }
-.menu__repas__entree, .menu__repas__plat, .menu__repas__desserts {
+.menu__carte__repas__entree, .menu__carte__repas__plat, .menu__carte__repas__desserts {
   display: flex;
-  width: 100%;
   margin: 10px 20px 10px 20px;
   width: calc(100% - 40px);
   height: 70px;
@@ -866,7 +882,7 @@ a {
   background: white;
   border-radius: 20px;
 }
-.menu__repas__entree__header, .menu__repas__plat__header, .menu__repas__desserts__header {
+.menu__carte__repas__entree__header, .menu__carte__repas__plat__header, .menu__carte__repas__desserts__header {
   width: 95%;
   padding-top: 10px;
   margin-left: 10px;
@@ -875,19 +891,19 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__repas__entree__header__titre, .menu__repas__plat__header__titre, .menu__repas__desserts__header__titre {
+.menu__carte__repas__entree__header__titre, .menu__carte__repas__plat__header__titre, .menu__carte__repas__desserts__header__titre {
   font-weight: 900;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__repas__entree__header__commentaire, .menu__repas__plat__header__commentaire, .menu__repas__desserts__header__commentaire {
+.menu__carte__repas__entree__header__commentaire, .menu__carte__repas__plat__header__commentaire, .menu__carte__repas__desserts__header__commentaire {
   font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__repas__entree__prix, .menu__repas__plat__prix, .menu__repas__desserts__prix {
+.menu__carte__repas__entree__prix, .menu__carte__repas__plat__prix, .menu__carte__repas__desserts__prix {
   padding-bottom: 15px;
   font-weight: 900;
   display: flex;
@@ -896,7 +912,7 @@ a {
   margin-right: 10px;
   font-size: 15px;
 }
-.menu__repas__entree__confirmation, .menu__repas__plat__confirmation, .menu__repas__desserts__confirmation {
+.menu__carte__repas__entree__confirmation, .menu__carte__repas__plat__confirmation, .menu__carte__repas__desserts__confirmation {
   background-color: #99E2D0;
   margin-right: -80px;
   width: 80px;
@@ -905,7 +921,7 @@ a {
   justify-content: center;
   transition-duration: 1.2s;
 }
-.menu__repas__entree__confirmation__animicone, .menu__repas__plat__confirmation__animicone, .menu__repas__desserts__confirmation__animicone {
+.menu__carte__repas__entree__confirmation__animicone, .menu__carte__repas__plat__confirmation__animicone, .menu__carte__repas__desserts__confirmation__animicone {
   height: 20px;
   width: 20px;
   background-color: white;
@@ -916,15 +932,15 @@ a {
   transform: rotate(0);
   transition-duration: 1s;
 }
-.menu__repas__entree__confirmation__animicone__icone, .menu__repas__plat__confirmation__animicone__icone, .menu__repas__desserts__confirmation__animicone__icone {
+.menu__carte__repas__entree__confirmation__animicone__icone, .menu__carte__repas__plat__confirmation__animicone__icone, .menu__carte__repas__desserts__confirmation__animicone__icone {
   color: #99E2D0;
   font-size: 14px;
 }
-.menu__repas__entree:hover .menu__repas__entree__confirmation, .menu__repas__entree:hover .menu__repas__plat__confirmation, .menu__repas__entree:hover .menu__repas__desserts__confirmation, .menu__repas__plat:hover .menu__repas__entree__confirmation, .menu__repas__plat:hover .menu__repas__plat__confirmation, .menu__repas__plat:hover .menu__repas__desserts__confirmation, .menu__repas__desserts:hover .menu__repas__entree__confirmation, .menu__repas__desserts:hover .menu__repas__plat__confirmation, .menu__repas__desserts:hover .menu__repas__desserts__confirmation {
+.menu__carte__repas__entree:hover .menu__carte__repas__entree__confirmation, .menu__carte__repas__entree:hover .menu__carte__repas__plat__confirmation, .menu__carte__repas__entree:hover .menu__carte__repas__desserts__confirmation, .menu__carte__repas__plat:hover .menu__carte__repas__entree__confirmation, .menu__carte__repas__plat:hover .menu__carte__repas__plat__confirmation, .menu__carte__repas__plat:hover .menu__carte__repas__desserts__confirmation, .menu__carte__repas__desserts:hover .menu__carte__repas__entree__confirmation, .menu__carte__repas__desserts:hover .menu__carte__repas__plat__confirmation, .menu__carte__repas__desserts:hover .menu__carte__repas__desserts__confirmation {
   cursor: pointer;
   margin-right: 0;
 }
-.menu__repas__entree:hover .menu__repas__entree__confirmation__animicone, .menu__repas__entree:hover .menu__repas__plat__confirmation__animicone, .menu__repas__entree:hover .menu__repas__desserts__confirmation__animicone, .menu__repas__plat:hover .menu__repas__entree__confirmation__animicone, .menu__repas__plat:hover .menu__repas__plat__confirmation__animicone, .menu__repas__plat:hover .menu__repas__desserts__confirmation__animicone, .menu__repas__desserts:hover .menu__repas__entree__confirmation__animicone, .menu__repas__desserts:hover .menu__repas__plat__confirmation__animicone, .menu__repas__desserts:hover .menu__repas__desserts__confirmation__animicone {
+.menu__carte__repas__entree:hover .menu__carte__repas__entree__confirmation__animicone, .menu__carte__repas__entree:hover .menu__carte__repas__plat__confirmation__animicone, .menu__carte__repas__entree:hover .menu__carte__repas__desserts__confirmation__animicone, .menu__carte__repas__plat:hover .menu__carte__repas__entree__confirmation__animicone, .menu__carte__repas__plat:hover .menu__carte__repas__plat__confirmation__animicone, .menu__carte__repas__plat:hover .menu__carte__repas__desserts__confirmation__animicone, .menu__carte__repas__desserts:hover .menu__carte__repas__entree__confirmation__animicone, .menu__carte__repas__desserts:hover .menu__carte__repas__plat__confirmation__animicone, .menu__carte__repas__desserts:hover .menu__carte__repas__desserts__confirmation__animicone {
   cursor: pointer;
   transform: rotate(360deg);
 }
