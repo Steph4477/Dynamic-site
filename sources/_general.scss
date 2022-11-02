@@ -3,7 +3,6 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -23,8 +22,13 @@ h3{
 h4{
     font-size: 14px;
 }
+
 body{
     font-family: "roboto", sans-serif;
+}
+
+.nav{
+    animation: cache 5s linear;
 }
 
 .main{
@@ -32,37 +36,20 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 footer{
     animation: cache 5s linear;
-   
-}
-ul{
-    list-style-type: none;  
-}
-a{
-    text-decoration: none;
-    color: black;
 }
 
-@keyframes cache{
-    0% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.footer--1{
+    animation: cache 0s linear;
+}   
+
+ul{
+    list-style-type: none;
 }
-@keyframes sortie_cache{
-    0% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
 }

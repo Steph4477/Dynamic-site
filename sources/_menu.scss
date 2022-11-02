@@ -7,6 +7,7 @@
     &__icone{
         font-size: 20px;
         width: 15%;
+        color: black;
     }
     &__logo{
         display: flex;
@@ -16,6 +17,7 @@
         font-family: "Shrikhand", sans-serif;
     }
 }
+
 .header__photo{
     width: 100%;
     height: 300px;
@@ -23,14 +25,14 @@
     position: relative;
     z-index: 5;
 }
+
 .menu{
     width: 100%;
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(247, 247, 247);
     margin-top: -60px;
     border-radius: 40px 40px 0px 0px;
     position: relative;
     z-index: 10;
-   
     &__en-tete{
         width: 100%;
         display: flex;
@@ -89,9 +91,10 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            animation: apparition 2s;
-            transform-origin: left;
-            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            position: relative;
+            bottom: 0;
+            opacity: 0;
+            animation: deplacement 0.8s linear;
             animation-fill-mode: both;
             @media all and (min-width: 768px){
                 width: 33%;
@@ -124,6 +127,7 @@
                 position: relative;
                 background: white;
                 border-radius: 20px;
+                box-shadow: 0px 4px 4px 2px  #cfcece;
                 &__header{
                     width: 95%;
                     padding-top: 10px;
@@ -212,7 +216,6 @@
             background: linear-gradient(#f89fdf, #b48fe0);
         }
     }
-    
 }
 
 @for $i from 0 to 3 {
@@ -220,4 +223,3 @@
       animation-delay: 0.8s * $i !important;
     }
 }
-

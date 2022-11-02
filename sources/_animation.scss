@@ -28,6 +28,7 @@ $color-tertiary: #99E2D0;
         animation-fill-mode: forwards;
     }
 }
+
 .logo {
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11);
@@ -161,6 +162,31 @@ $color-tertiary: #99E2D0;
         }          
     }
 }
+
+@keyframes cache{
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sortie_cache{
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes pulsation{
     0%{
         transform: scale(0.8);
@@ -213,11 +239,15 @@ $color-tertiary: #99E2D0;
         visibility: hidden;
     }
 }
-@keyframes apparition {
+
+@keyframes deplacement{
     0% {
-        transform: scaleX(0)
+        bottom: -10px;
+        opacity: 0;
     }
+   
     100% {
-      transform: scaleX(1);
+        bottom: 0px;
+        opacity: 1;
     }
-  }
+}

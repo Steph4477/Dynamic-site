@@ -1,9 +1,10 @@
 
-.footer{
-    width: 100%;
+.footer,
+.footer--1{
     text-align: center;
     background-color: rgb(53, 53, 53);
     padding: 10px 0 30px 22px;
+    color: rgb(255, 255, 255);
     @media all and (max-width: 768px){
         text-align: left;
     }
@@ -12,10 +13,9 @@
         height: 60px;
         font-size: 22px;
         padding-top: 10px;
-        color: rgb(255, 255, 255);
     }
     &__lien{ 
-        color: rgb(255, 255, 255);
         line-height: 25px;
     }
 }
+

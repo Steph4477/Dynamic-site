@@ -48,8 +48,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                scale: (1);
-                animation: pulsation 1s infinite linear;
                 &__nouveau{
                     width: 65px;
                     height: 25px;
@@ -65,6 +63,7 @@
             display: flex;
             width: 100%;
             padding: 10px;
+            color:black;
             &__texte{
                 width: 90%;
                 text-align: left;

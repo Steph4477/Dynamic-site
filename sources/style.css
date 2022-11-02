@@ -186,6 +186,51 @@
   left: 25px;
 }
 
+@-webkit-keyframes cache {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cache {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes sortie_cache {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sortie_cache {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @-webkit-keyframes pulsation {
   0% {
     transform: scale(0.8);
@@ -197,7 +242,6 @@
     transform: scale(0.8);
   }
 }
-
 @keyframes pulsation {
   0% {
     transform: scale(0.8);
@@ -283,20 +327,24 @@
     visibility: hidden;
   }
 }
-@-webkit-keyframes apparition {
+@-webkit-keyframes deplacement {
   0% {
-    transform: scaleX(0);
+    bottom: -10px;
+    opacity: 0;
   }
   100% {
-    transform: scaleX(1);
+    bottom: 0px;
+    opacity: 1;
   }
 }
-@keyframes apparition {
+@keyframes deplacement {
   0% {
-    transform: scaleX(0);
+    bottom: -10px;
+    opacity: 0;
   }
   100% {
-    transform: scaleX(1);
+    bottom: 0px;
+    opacity: 1;
   }
 }
 * {
@@ -323,6 +371,11 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+.nav {
+  -webkit-animation: cache 5s linear;
+          animation: cache 5s linear;
+}
+
 .main {
   -webkit-animation: cache 5s linear;
           animation: cache 5s linear;
@@ -335,66 +388,20 @@ footer {
           animation: cache 5s linear;
 }
 
+.footer--1 {
+  -webkit-animation: cache 0s linear;
+          animation: cache 0s linear;
+}
+
 ul {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
-@-webkit-keyframes cache {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes cache {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes sortie_cache {
-  0% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sortie_cache {
-  0% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.nav {
-  -webkit-animation: cache 5s linear;
-          animation: cache 5s linear;
-  z-index: 10;
-  min-width: 350px;
-}
 .nav__header {
   height: 60px;
   display: flex;
@@ -646,9 +653,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  scale: 1;
-  -webkit-animation: pulsation 1s infinite linear;
-          animation: pulsation 1s infinite linear;
 }
 .main__resto__article__photo__promo__nouveau {
   width: 65px;
@@ -663,6 +667,7 @@ a {
   display: flex;
   width: 100%;
   padding: 10px;
+  color: black;
 }
 .main__resto__article__contenue__texte {
   width: 90%;
@@ -714,26 +719,28 @@ a {
   }
 }
 
-.footer {
-  width: 100%;
+.footer,
+.footer--1 {
   text-align: center;
   background-color: rgb(53, 53, 53);
   padding: 10px 0 30px 22px;
+  color: rgb(255, 255, 255);
 }
 @media all and (max-width: 768px) {
-  .footer {
+  .footer,
+.footer--1 {
     text-align: left;
   }
 }
-.footer__titre {
+.footer__titre,
+.footer--1__titre {
   font-family: "Shrikhand", sans-serif;
   height: 60px;
   font-size: 22px;
   padding-top: 10px;
-  color: rgb(255, 255, 255);
 }
-.footer__lien {
-  color: rgb(255, 255, 255);
+.footer__lien,
+.footer--1__lien {
   line-height: 25px;
 }
 
@@ -747,6 +754,7 @@ a {
 .header__en-tete__icone {
   font-size: 20px;
   width: 15%;
+  color: black;
 }
 .header__en-tete__logo {
   display: flex;
@@ -767,7 +775,7 @@ a {
 
 .menu {
   width: 100%;
-  background-color: rgb(229, 229, 229);
+  background-color: rgb(247, 247, 247);
   margin-top: -60px;
   border-radius: 40px 40px 0px 0px;
   position: relative;
@@ -840,11 +848,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  -webkit-animation: apparition 2s;
-          animation: apparition 2s;
-  transform-origin: left;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  position: relative;
+  bottom: 0;
+  opacity: 0;
+  -webkit-animation: deplacement 0.8s linear;
+          animation: deplacement 0.8s linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -881,6 +889,7 @@ a {
   position: relative;
   background: white;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px 2px #cfcece;
 }
 .menu__carte__repas__entree__header, .menu__carte__repas__plat__header, .menu__carte__repas__desserts__header {
   width: 95%;
