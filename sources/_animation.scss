@@ -90,20 +90,13 @@ $color-tertiary: #99E2D0;
     position: fixed;
     left:0;
     right:0;
-    top: 0;
+    top: 250px;
     bottom:0;   
-    animation: loader 3s linear;
+    animation: loader 3s linear; /* loader = agrandissemnet, opacité, effacement*/
     animation-fill-mode: forwards;
     z-index: -10;
     &__container{
         display: flex;
-        margin: auto;
-        position: fixed;
-        left:0;
-        right:0;
-        top: 0.5;
-        bottom: 0;
-        padding-bottom: 200px;
         &__assiette{
             width: 300px;
             height: 300px;
@@ -152,7 +145,7 @@ $color-tertiary: #99E2D0;
                         &__couteau{
                             position: absolute;   
                             scale: (0.20);
-                            rotate: 90deg;
+                            transform: rotate(90deg);
                             top: -370px;
                             left: 25px;
                         }

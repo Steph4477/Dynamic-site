@@ -109,23 +109,16 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: 250px;
   bottom: 0;
   -webkit-animation: loader 3s linear;
-          animation: loader 3s linear;
+          animation: loader 3s linear; /* loader = agrandissemnet, opacité, effacement*/
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: -10;
 }
 .chargement__container {
   display: flex;
-  margin: auto;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0.5;
-  bottom: 0;
-  padding-bottom: 200px;
 }
 .chargement__container__assiette {
   width: 300px;
@@ -181,7 +174,7 @@
 .chargement__container__assiette__fond__centre__container-couteau__couteau {
   position: absolute;
   scale: 0.2;
-  rotate: 90deg;
+  transform: rotate(90deg);
   top: -370px;
   left: 25px;
 }
@@ -355,8 +348,13 @@
   max-width: 1400px;
 }
 
+h1 {
+  font-size: 26px;
+}
+
 h2 {
-  font-size: 22px;
+  font-size: 24px;
+  font-stretch: expanded;
 }
 
 h3 {
@@ -364,7 +362,8 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 body {
@@ -410,7 +409,6 @@ a {
 }
 .nav__header__logo {
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
   text-align: center;
 }
 .nav__localisation {
