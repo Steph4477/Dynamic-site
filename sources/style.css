@@ -329,7 +329,7 @@
 }
 @-webkit-keyframes deplacement {
   0% {
-    bottom: -10px;
+    bottom: -20px;
     opacity: 0;
   }
   100% {
@@ -339,7 +339,7 @@
 }
 @keyframes deplacement {
   0% {
-    bottom: -10px;
+    bottom: -20px;
     opacity: 0;
   }
   100% {
@@ -851,8 +851,8 @@ a {
   position: relative;
   bottom: 0;
   opacity: 0;
-  -webkit-animation: deplacement 0.8s linear;
-          animation: deplacement 0.8s linear;
+  -webkit-animation: deplacement 1.8s linear;
+          animation: deplacement 1.8s linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -918,13 +918,13 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  margin-right: 10px;
+  margin-right: 30px;
   font-size: 15px;
 }
 .menu__carte__repas__entree__confirmation, .menu__carte__repas__plat__confirmation, .menu__carte__repas__desserts__confirmation {
   background-color: #99E2D0;
-  margin-right: -80px;
-  width: 80px;
+  margin-right: -90px;
+  width: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -983,11 +983,11 @@ a {
 }
 
 .delay-1 {
-  -webkit-animation-delay: 0.8s !important;
-          animation-delay: 0.8s !important;
+  -webkit-animation-delay: 1.5s !important;
+          animation-delay: 1.5s !important;
 }
 
 .delay-2 {
-  -webkit-animation-delay: 1.6s !important;
-          animation-delay: 1.6s !important;
+  -webkit-animation-delay: 3s !important;
+          animation-delay: 3s !important;
 }/*# sourceMappingURL=style.css.map */

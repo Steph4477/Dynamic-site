@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>OhMyFood</title>
+        <meta charset="utf-8">
+            
+        <!-- Fenêtre virtuelle est un moyen d'améliorer l'aspect des sites non optimisés pour les mobiles sur les appareils à écran étroit-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Intégration de normalize.css pour une meilleure compatibilité des moteurs de recherche -->
+        <link rel="stylesheet" type="text/css" href="sources/normalize.css">   
+        
+        <!--Pré-télechargement de la police d'écriture "Roboto" et "Shrikhand"avec fonts.google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+            
+        <!--Intégration de la mise en forme de la page avec style.css-->
+        <link rel="stylesheet" type="text/css" href="sources/style.css">
+        
+        <!--Pour mettre l'icone dans l'onglet-->
+        <link rel="icon" href="images\logo\ohmyfood@2x.svg" type="image/png"> 
+    </head>
+    <body>
+        <header class="header__en-tete">
+            <a href="index.html"><i class="fa-solid fa-arrow-left header__en-tete__icone"></i></a>
+            <h1 class="header__en-tete__logo">ohmyfood</h1>
+        </header>
+        <img src="restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"alt="Le délice des sens"class="header__photo">
+        <main class="menu">
+            <section class="menu__en-tete">
+                <h2 class="menu__en-tete__titre">Le délice des sens</h2>
+                <div class="menu__en-tete__icone">
+                    <i class="far fa-heart fa menu__en-tete__icone__coeur"></i>
+                    <i class="fa-solid fa-heart fa menu__en-tete__icone__coeur2"></i>
+                </div>
+            </section>
+            <div class="menu__carte">
+                <section class="menu__carte__repas delay-0">
+                    <h3 class="menu__carte__repas__titre">entrées</h3>
+                    <article class="menu__carte__repas__entree">
+                        <header class="menu__carte__repas__entree__header">
+                            <h3 class="menu__carte__repas__entree__header__titre">Tartare de thon</h3>
+                            <h4 class="menu__carte__repas__entree__header__commentaire">Assaisonné au yuzu</h4>
+                        </header>
+                        <div class="menu__carte__repas__entree__prix">25€</div>
+                        <div class="menu__carte__repas__entree__confirmation">
+                            <div class="menu__carte__repas__entree__confirmation__animicone">
+                                <i class="menu__carte__repas__entree__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu__carte__repas__entree">
+                        <header class="menu__carte__repas__entree__header">
+                            <h3 class="menu__carte__repas__entree__header__titre">Bouchée de homard croustillant</h3>
+                            <h4 class="menu__carte__repas__entree__header__commentaire">Et sa farandole de petits légumes</h4>
+                        </header>
+                        <div class="menu__carte__repas__entree__prix">35€</div>
+                        <div class="menu__carte__repas__entree__confirmation">
+                            <div class="menu__carte__repas__entree__confirmation__animicone">
+                                <i class="menu__carte__repas__entree__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>   
+                    <article class="menu__carte__repas__entree">
+                        <header class="menu__carte__repas__entree__header">
+                            <h3 class="menu__carte__repas__entree__header__titre">Velouté de cèpes </h3>
+                            <h4 class="menu__carte__repas__entree__header__commentaire">Aux truffes</h4>
+                        </header>
+                        <div class="menu__carte__repas__entree__prix">20€</div>
+                        <div class="menu__carte__repas__entree__confirmation">
+                            <div class="menu__carte__repas__entree__confirmation__animicone">
+                                <i class="menu__carte__repas__entree__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="menu__carte__repas delay-1"> 
+                    <h3 class="menu__carte__repas__titre">PLATS</h3>
+                    <article class="menu__carte__repas__plat">
+                        <header class="menu__carte__repas__plat__header">
+                            <h3 class="menu__carte__repas__plat__header__titre">Poulet rôti aux herbes de Provence</h3>
+                            <h4 class="menu__carte__repas__plat__header__commentaire">Et sa crème de truffe</h4>
+                        </header>
+                        <div class="menu__carte__repas__plat__prix">40€</div>
+                        <div class="menu__carte__repas__plat__confirmation">
+                            <div class="menu__carte__repas__plat__confirmation__animicone">
+                                <i class="menu__carte__repas__plat__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu__carte__repas__plat">
+                        <header class="menu__carte__repas__plat__header">
+                            <h3 class="menu__carte__repas__plat__header__titre">Langouste rôtie</h3>
+                            <h4 class="menu__carte__repas__plat__header__commentaire">Et ses légumes de saison</h4>
+                        </header>
+                        <div class="menu__carte__repas__plat__prix">35€</div>
+                        <div class="menu__carte__repas__plat__confirmation">
+                            <div class="menu__carte__repas__plat__confirmation__animicone">
+                                <i class="menu__carte__repas__plat__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>  
+                    <article class="menu__carte__repas__plat">
+                        <header class="menu__carte__repas__plat__header">
+                            <h3 class="menu__carte__repas__plat__header__titre">Côte de boeuf Angus</h3>
+                            <h4 class="menu__carte__repas__plat__header__commentaire">Et sa purée de panais</h4>
+                        </header>
+                        <div class="menu__carte__repas__plat__prix">44€</div>
+                        <div class="menu__carte__repas__plat__confirmation">
+                            <div class="menu__carte__repas__plat__confirmation__animicone">
+                                <i class="menu__carte__repas__plat__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="menu__carte__repas delay-2"> 
+                    <h3 class="menu__carte__repas__titre">DESSERTS</h3>
+                    <article class="menu__carte__repas__desserts">
+                        <header class="menu__carte__repas__desserts__header">
+                            <h3 class="menu__carte__repas__desserts__header__titre">Farandole de desserts</h3>
+                            <h4 class="menu__carte__repas__desserts__header__commentaire">Du chef</h4>
+                        </header>
+                        <div class="menu__carte__repas__desserts__prix">18€</div>
+                        <div class="menu__carte__repas__desserts__confirmation">
+                            <div class="menu__carte__repas__desserts__confirmation__animicone">
+                                <i class="menu__carte__repas__desserts__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu__carte__repas__desserts">
+                        <header class="menu__carte__repas__desserts__header">
+                            <h3 class="menu__carte__repas__desserts__header__titre">Crème brulée</h3>
+                            <h4 class="menu__carte__repas__desserts__header__commentaire">Revisité</h4>
+                        </header>
+                        <div class="menu__carte__repas__desserts__prix">22€</div>
+                        <div class="menu__carte__repas__desserts__confirmation">
+                            <div class="menu__carte__repas__desserts__confirmation__animicone">
+                                <i class="menu__carte__repas__desserts__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>   
+                    <article class="menu__carte__repas__desserts">
+                        <header class="menu__carte__repas__desserts__header">
+                            <h3 class="menu__carte__repas__desserts__header__titre">Tiramisu</h3>
+                            <h4 class="menu__carte__repas__desserts__header__commentaire">À la noisette</h4>
+                        </header>
+                        <div class="menu__carte__repas__desserts__prix">23€</div>
+                        <div class="menu__carte__repas__desserts__confirmation">
+                            <div class="menu__carte__repas__desserts__confirmation__animicone">
+                                <i class="menu__carte__repas__desserts__confirmation__animicone__icone fas fa-check"></i>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <section class="menu__bouton">
+                <h3 class="menu__bouton__titre">Commander</h3>
+            </section>
+        </main>
+        <footer section class="footer--1">
+            <ul>
+                <li class="footer__titre" alt="logo_du_site" title="logo">ohmyfood</li>
+                <li>
+                    <a href="#" class="footer__lien" alt="Proposer_un_restaurant" title="Proposer un restaurant">
+                        <i class="fa-solid fa-utensils footer__lien__icone"></i>
+                        Proposer un restaurant
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__lien" alt="Devenir_partenaire" title="Devenir partenaire">
+                            <i class="fa-solid fa-handshake-simple footer__lien__icone"></i>
+                            Devenir partenaire
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__lien" title="Mention légales" alt="Lire_mention_légales">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="ohmyfood@gmail.com" class="footer__lien" alt="Envoyer_un_mail" title="boîte mail">Contact</a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+        <!-- Intégration des icones de la bibliotheque fontAwesome -->
+        <script src="https://kit.fontawesome.com/7bbbf8beb9.js" crossorigin="anonymous"></script> 
+    </body>
+</html>
