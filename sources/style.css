@@ -651,6 +651,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .main__resto__article__photo__promo__nouveau {
   width: 65px;
@@ -849,8 +850,8 @@ a {
   position: relative;
   bottom: 0;
   opacity: 0;
-  -webkit-animation: deplacement 1.8s linear;
-          animation: deplacement 1.8s linear;
+  -webkit-animation: deplacement 0.4s linear;
+          animation: deplacement 0.4s linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
