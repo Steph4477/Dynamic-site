@@ -7,9 +7,8 @@
     }
     &__titre{
         width: 100%;
-        margin-bottom: 40px;
+        margin: 20px 0 20px 0;
         font-weight: 900;
-        margin-top: 30px;
         padding-left: 20px;
         @media all and (min-width: 768px){
             text-align: center; 
@@ -17,19 +16,16 @@
     }
     &__article{
         width: 100%;
-        margin: 0 20px 0 20px;
+        margin: 0px 20px 40px 20px;
         width: calc(100% - 40px);
         height: 220px;
-        margin-bottom: 40px;
         box-shadow: 0px 4px 4px 2px  #dcdbdb;
         border-radius: 20px;
-        @media all and (min-width: 768px){
-            margin: 0 0 40px 0;
-            width: 45%; 
+        @media all and (min-width: 768px){ 
+            width: 44%; 
         }
         @media all and (min-width: 992px){
-            width: 23%;
-            margin-left: 0;
+            width: 20%;  
         }
         &__photo{
             position: relative;
