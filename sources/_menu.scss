@@ -218,8 +218,3 @@
     }
 }
 
-@for $i from 0 to 3 {
-    .delay-#{$i} {
-      animation-delay: 0.8s * $i !important;
-    }
-}

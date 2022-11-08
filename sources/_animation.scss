@@ -12,8 +12,7 @@ $color-tertiary: #99E2D0;
     top: 0;
     bottom: 0;
     z-index: -20;
-    animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11);
-    animation-fill-mode: forwards;
+    animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11); /* je le cache et le rend invisible a la fin de l'animation*/
     background-color: #000;
     .cercle{
         height: 400px;
@@ -24,15 +23,13 @@ $color-tertiary: #99E2D0;
         display: flex;
         margin: auto;
         scale: (0.5);
-        animation: pulsation 1s infinite linear;
-        animation-fill-mode: forwards;
+        animation: pulsation 1s infinite linear;         
     }
 }
 
 .logo {
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11);
-    animation-fill-mode: forwards;
     &__container{
         width: 60%;
         display: flex;
@@ -156,7 +153,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes cache{
+@keyframes cache{                      /* cache page d'acceuil pendant le loader*/
     0% {
         opacity: 0;
     }
@@ -168,7 +165,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes sortie_cache{
+@keyframes sortie_cache{                   /* apparition de la page d'accueil*/
     0% {
         opacity: 1;
     }
@@ -180,7 +177,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes pulsation{
+@keyframes pulsation{          /* effet arrière plan*/
     0%{
         transform: scale(0.8);
     }
@@ -192,7 +189,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes rotate{
+@keyframes rotate{                                 /*rotation couteau, fourchette*/
     100% {
         transform: rotateZ(720deg);
     }
@@ -215,7 +212,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes swing-top-fwd{
+@keyframes swing-top-fwd{              /* mouvement des svg du loader*/      
     0% {
         transform: rotateX(180deg);
         transform-origin: bottom;
@@ -226,14 +223,14 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes reset_opacity{
+@keyframes reset_opacity{  /* disparition du loader */
     100% {
         opacity: 0;
         visibility: hidden;
     }
 }
 
-@keyframes deplacement{
+@keyframes deplacement{     /* deplacement des carte du menu*/
     0% {
         bottom: -20px;
         opacity: 0;
@@ -242,5 +239,11 @@ $color-tertiary: #99E2D0;
     100% {
         bottom: 0px;
         opacity: 1;
+    }
+}
+
+@for $i from 0 to 3 {
+    .delay-#{$i} {
+      animation-delay: 0.8s * $i !important;
     }
 }
