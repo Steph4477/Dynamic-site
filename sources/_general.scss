@@ -1,7 +1,11 @@
-@use "sass:color";
-$color-primary: #9356DC;
+
+$color-primary: #9356DC;      /*variable sass*/
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+
+@mixin ombre {
+    box-shadow: 0px 4px 4px 2px  #dcdbdb; /* morçeau paramétrable et réutilisable */
+}
 
 *{
     box-sizing: border-box;

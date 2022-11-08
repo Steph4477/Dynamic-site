@@ -340,6 +340,7 @@
     opacity: 1;
   }
 }
+/*variable sass*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -497,14 +498,14 @@ a {
   font-weight: 500;
   width: 100%;
   padding: 18px;
-  border-radius: 10%/50%;
+  border-radius: 50px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 4px 4px 2px #cfcece;
+  box-shadow: 0px 4px 4px 2px #dcdbdb; /* morçeau paramétrable et réutilisable */
 }
 .nav__explo__bouton__titre:hover {
-  box-shadow: 0px 2px 2px 2px #4c4c4c;
-  background: linear-gradient(#f89fdf, #b48fe0);
+  box-shadow: 0px 2px 2px 2px #858484;
+  filter: brightness(120%);
 }
 
 .main__filtre {
@@ -602,7 +603,7 @@ a {
 }
 .main__resto__titre {
   width: 100%;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 40px 0;
   font-weight: 900;
   padding-left: 20px;
 }
@@ -616,7 +617,7 @@ a {
   margin: 0px 20px 40px 20px;
   width: calc(100% - 40px);
   height: 220px;
-  box-shadow: 0px 4px 4px 2px #dcdbdb;
+  box-shadow: 0px 4px 4px 2px #dcdbdb; /* morçeau paramétrable et réutilisable */
   border-radius: 20px;
 }
 @media all and (min-width: 768px) {
@@ -885,7 +886,7 @@ a {
   position: relative;
   background: white;
   border-radius: 20px;
-  box-shadow: 0px 4px 4px 2px #cfcece;
+  box-shadow: 0px 4px 4px 2px #dcdbdb; /* morçeau paramétrable et réutilisable */
 }
 .menu__carte__repas__entree__header, .menu__carte__repas__plat__header, .menu__carte__repas__desserts__header {
   width: 95%;
@@ -962,15 +963,15 @@ a {
   font-weight: 500;
   width: 100%;
   padding: 18px;
-  border-radius: 10%/50%;
+  border-radius: 50px;
   text-align: center;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 4px 4px 2px #cfcece;
+  box-shadow: 0px 4px 4px 2px #dcdbdb; /* morçeau paramétrable et réutilisable */
 }
 .menu__bouton__titre:hover {
-  box-shadow: 0px 2px 2px 2px #4c4c4c;
-  background: linear-gradient(#f89fdf, #b48fe0);
+  box-shadow: 0px 2px 2px 2px #858484;
+  filter: brightness(120%);
 }
 
 .delay-0 {
@@ -979,11 +980,11 @@ a {
 }
 
 .delay-1 {
-  -webkit-animation-delay: 1.5s !important;
-          animation-delay: 1.5s !important;
+  -webkit-animation-delay: 0.8s !important;
+          animation-delay: 0.8s !important;
 }
 
 .delay-2 {
-  -webkit-animation-delay: 3s !important;
-          animation-delay: 3s !important;
+  -webkit-animation-delay: 1.6s !important;
+          animation-delay: 1.6s !important;
 }/*# sourceMappingURL=style.css.map */
