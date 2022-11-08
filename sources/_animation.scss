@@ -12,8 +12,7 @@ $color-tertiary: #99E2D0;
     top: 0;
     bottom: 0;
     z-index: -20;
-    animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11);
-    animation-fill-mode: forwards;
+    animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11); /* je le cache et le rend invisible a la fin de l'animation*/
     background-color: #000;
     .cercle{
         height: 400px;
@@ -24,16 +23,13 @@ $color-tertiary: #99E2D0;
         display: flex;
         margin: auto;
         scale: (0.5);
-        animation: pulsation 1s infinite linear;
-        animation-fill-mode: forwards;        /* La cible conservera les valeurs calculées définies par 
-                                                la dernière image clé rencontrée lors de l'exécution.*/          
+        animation: pulsation 1s infinite linear;         
     }
 }
 
 .logo {
     animation: swing-top-fwd 4s linear;
     animation: reset_opacity 4s cubic-bezier(1,-0.11,1,.11);
-    animation-fill-mode: forwards;
     &__container{
         width: 60%;
         display: flex;
