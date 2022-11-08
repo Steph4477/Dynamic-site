@@ -26,8 +26,7 @@
   -webkit-animation: pulsation 1s infinite linear;
           animation: pulsation 1s infinite linear;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; /* La cible conservera les valeurs calculées définies par 
-  la dernière image clé rencontrée lors de l'exécution.*/
+          animation-fill-mode: forwards;
 }
 
 .logo {
@@ -180,7 +179,7 @@
   left: 25px;
 }
 
-@-webkit-keyframes cache { /* cache page d'acceuil pendant le loader*/
+@-webkit-keyframes cache {
   0% {
     opacity: 0;
   }
@@ -192,7 +191,7 @@
   }
 }
 
-@keyframes cache { /* cache page d'acceuil pendant le loader*/
+@keyframes cache {
   0% {
     opacity: 0;
   }
@@ -203,7 +202,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes sortie_cache { /* apparition de la page d'accueil*/
+@-webkit-keyframes sortie_cache {
   0% {
     opacity: 1;
   }
@@ -214,7 +213,7 @@
     opacity: 0;
   }
 }
-@keyframes sortie_cache { /* apparition de la page d'accueil*/
+@keyframes sortie_cache {
   0% {
     opacity: 1;
   }
@@ -225,7 +224,7 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes pulsation { /* effet arrière plan*/
+@-webkit-keyframes pulsation {
   0% {
     transform: scale(0.8);
   }
@@ -236,7 +235,7 @@
     transform: scale(0.8);
   }
 }
-@keyframes pulsation { /* effet arrière plan*/
+@keyframes pulsation {
   0% {
     transform: scale(0.8);
   }
@@ -247,12 +246,12 @@
     transform: scale(0.8);
   }
 }
-@-webkit-keyframes rotate { /*rotation couteau, fourchette*/
+@-webkit-keyframes rotate {
   100% {
     transform: rotateZ(720deg);
   }
 }
-@keyframes rotate { /*rotation couteau, fourchette*/
+@keyframes rotate {
   100% {
     transform: rotateZ(720deg);
   }
@@ -289,7 +288,7 @@
     visibility: hidden;
   }
 }
-@-webkit-keyframes swing-top-fwd { /* mouvement des svg du loader*/
+@-webkit-keyframes swing-top-fwd {
   0% {
     transform: rotateX(180deg);
     transform-origin: bottom;
@@ -299,7 +298,7 @@
     transform-origin: bottom;
   }
 }
-@keyframes swing-top-fwd { /* mouvement des svg du loader*/
+@keyframes swing-top-fwd {
   0% {
     transform: rotateX(180deg);
     transform-origin: bottom;
@@ -309,19 +308,19 @@
     transform-origin: bottom;
   }
 }
-@-webkit-keyframes reset_opacity { /* disparition du loader */
+@-webkit-keyframes reset_opacity {
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
-@keyframes reset_opacity { /* disparition du loader */
+@keyframes reset_opacity {
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
-@-webkit-keyframes deplacement { /* deplacement des carte du menu*/
+@-webkit-keyframes deplacement {
   0% {
     bottom: -20px;
     opacity: 0;
@@ -331,7 +330,7 @@
     opacity: 1;
   }
 }
-@keyframes deplacement { /* deplacement des carte du menu*/
+@keyframes deplacement {
   0% {
     bottom: -20px;
     opacity: 0;
@@ -341,21 +340,6 @@
     opacity: 1;
   }
 }
-.delay-0 {
-  -webkit-animation-delay: 0s !important;
-          animation-delay: 0s !important;
-}
-
-.delay-1 {
-  -webkit-animation-delay: 0.8s !important;
-          animation-delay: 0.8s !important;
-}
-
-.delay-2 {
-  -webkit-animation-delay: 1.6s !important;
-          animation-delay: 1.6s !important;
-}
-
 /*variable sass*/
 * {
   box-sizing: border-box;
@@ -988,4 +972,19 @@ a {
 .menu__bouton__titre:hover {
   box-shadow: 0px 2px 2px 2px #858484;
   filter: brightness(120%);
+}
+
+.delay-0 {
+  -webkit-animation-delay: 0s !important;
+          animation-delay: 0s !important;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.8s !important;
+          animation-delay: 0.8s !important;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 1.6s !important;
+          animation-delay: 1.6s !important;
 }/*# sourceMappingURL=style.css.map */
