@@ -180,7 +180,8 @@
   left: 25px;
 }
 
-@-webkit-keyframes cache { /* cache page d'acceuil pendant le loader*/
+@-webkit-keyframes cache { /* cache page d'acceuil (nav, main, footer)
+ pendant le loader + degradé du coeur*/
   0% {
     opacity: 0;
   }
@@ -192,7 +193,8 @@
   }
 }
 
-@keyframes cache { /* cache page d'acceuil pendant le loader*/
+@keyframes cache { /* cache page d'acceuil (nav, main, footer)
+ pendant le loader + degradé du coeur*/
   0% {
     opacity: 0;
   }
@@ -203,7 +205,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes sortie_cache { /* apparition de la page d'accueil*/
+@-webkit-keyframes sortie_cache { /* sortie hover coeur*/
   0% {
     opacity: 1;
   }
@@ -214,7 +216,7 @@
     opacity: 0;
   }
 }
-@keyframes sortie_cache { /* apparition de la page d'accueil*/
+@keyframes sortie_cache { /* sortie hover coeur*/
   0% {
     opacity: 1;
   }
@@ -309,13 +311,13 @@
     transform-origin: bottom;
   }
 }
-@-webkit-keyframes reset_opacity { /* disparition du loader */
+@-webkit-keyframes reset_opacity { /* disparition du logo + fond*/
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
-@keyframes reset_opacity { /* disparition du loader */
+@keyframes reset_opacity { /* disparition du logo + fond*/
   100% {
     opacity: 0;
     visibility: hidden;

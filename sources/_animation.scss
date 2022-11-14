@@ -1,4 +1,4 @@
-@use "sass:color";
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -157,7 +157,8 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes cache{                      /* cache page d'acceuil pendant le loader*/
+@keyframes cache{                      /* cache page d'acceuil (nav, main, footer)
+                                        pendant le loader + degradé du coeur*/
     0% {
         opacity: 0;
     }
@@ -169,7 +170,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes sortie_cache{                   /* apparition de la page d'accueil*/
+@keyframes sortie_cache{                   /* sortie hover coeur*/
     0% {
         opacity: 1;
     }
@@ -227,7 +228,7 @@ $color-tertiary: #99E2D0;
     }
 }
 
-@keyframes reset_opacity{  /* disparition du loader */
+@keyframes reset_opacity{  /* disparition du logo + fond*/
     100% {
         opacity: 0;
         visibility: hidden;
