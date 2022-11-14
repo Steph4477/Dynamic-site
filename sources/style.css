@@ -763,7 +763,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 80px;
+  height: 100px;
   width: 100%;
 }
 .header__en-tete__icone {
